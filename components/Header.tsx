@@ -290,7 +290,7 @@ export default function Header() {
   return (
     <>
       {/* Floating Glassmorphic Header */}
-      <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-24px)] sm:w-[calc(100%-32px)] max-w-[1440px] transition-all duration-300">
+      <header className="fixed top-4 left-1/2 -translate-x-1/2 z-[70] w-[calc(100%-24px)] sm:w-[calc(100%-32px)] max-w-[1440px] transition-all duration-300">
         <div className="bg-white/80 backdrop-blur-xl border border-white/60 shadow-[0_12px_36px_rgba(16,24,50,0.08),inset_0_1px_0_rgba(255,255,255,0.9)] rounded-2xl sm:rounded-3xl px-4 sm:px-7 py-3 sm:py-3.5 flex items-center justify-between gap-4">
           
           {/* Logo Placeholder with Dot indicator */}
@@ -549,10 +549,10 @@ export default function Header() {
 
       {/* Mobile Navigation Drawer */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-40 lg:hidden flex flex-col">
+        <div className="fixed inset-0 z-[60] lg:hidden flex flex-col">
           {/* Backdrop */}
           <div
-            className="fixed inset-0 bg-black/40 backdrop-blur-xs transition-opacity"
+            className="fixed inset-0 bg-black/50 backdrop-blur-xs transition-opacity"
             onClick={() => setMobileMenuOpen(false)}
           />
 

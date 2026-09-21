@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FloatingScrollbar from "@/components/FloatingScrollbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +32,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#fdfdfd] text-[#101832] selection:bg-[#7c35ed] selection:text-white">
+        <FloatingScrollbar />
         <Header />
         {/* Header floats fixed at top; individual pages control their top spacing */}
         <main className="flex-1">{children}</main>

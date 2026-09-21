@@ -123,23 +123,23 @@ export default function Home() {
         };
       case -1:
         return {
-          transform: "translate(calc(-50% - 104%), -50%) scale(0.85)",
+          transform: "translate(calc(-50% - var(--trade-shift, 74%)), -50%) scale(0.85)",
           zIndex: 20,
-          opacity: 0.65,
+          opacity: 0.75,
           pointerEvents: "auto",
           cursor: "pointer",
         };
       case 1:
         return {
-          transform: "translate(calc(-50% + 104%), -50%) scale(0.85)",
+          transform: "translate(calc(-50% + var(--trade-shift, 74%)), -50%) scale(0.85)",
           zIndex: 20,
-          opacity: 0.65,
+          opacity: 0.75,
           pointerEvents: "auto",
           cursor: "pointer",
         };
       case -2:
         return {
-          transform: "translate(calc(-50% - 196%), -50%) scale(0.68)",
+          transform: "translate(calc(-50% - calc(var(--trade-shift, 74%) * 1.9)), -50%) scale(0.68)",
           zIndex: 10,
           opacity: 0.25,
           pointerEvents: "auto",
@@ -147,7 +147,7 @@ export default function Home() {
         };
       case 2:
         return {
-          transform: "translate(calc(-50% + 196%), -50%) scale(0.68)",
+          transform: "translate(calc(-50% + calc(var(--trade-shift, 74%) * 1.9)), -50%) scale(0.68)",
           zIndex: 10,
           opacity: 0.25,
           pointerEvents: "auto",
@@ -208,7 +208,7 @@ export default function Home() {
         };
       case -1:
         return {
-          transform: "translate(calc(-50% - 104%), -50%) scale(0.82)",
+          transform: "translate(calc(-50% - var(--proof-shift, 74%)), -50%) scale(0.82)",
           zIndex: 20,
           opacity: 0.65,
           pointerEvents: "auto",
@@ -216,7 +216,7 @@ export default function Home() {
         };
       case 1:
         return {
-          transform: "translate(calc(-50% + 104%), -50%) scale(0.82)",
+          transform: "translate(calc(-50% + var(--proof-shift, 74%)), -50%) scale(0.82)",
           zIndex: 20,
           opacity: 0.65,
           pointerEvents: "auto",
@@ -678,7 +678,7 @@ export default function Home() {
             
             {/* Slider viewport */}
             <div
-              className="relative w-full h-[480px] sm:h-[530px] md:h-[560px] overflow-hidden flex items-center justify-center select-none"
+              className="relative w-full h-[480px] sm:h-[530px] md:h-[560px] overflow-hidden flex items-center justify-center select-none [--trade-shift:74%] sm:[--trade-shift:95%] md:[--trade-shift:104%]"
               onTouchStart={handleTradeTouchStart}
               onTouchEnd={handleTradeTouchEnd}
             >
@@ -732,7 +732,7 @@ export default function Home() {
                     key={trade.name}
                     style={getTradeCardStyle(idx)}
                     onClick={() => setActiveTradeIndex(idx)}
-                    className="absolute top-1/2 left-1/2 w-[280px] sm:w-[340px] md:w-[375px] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] select-none"
+                    className="absolute top-1/2 left-1/2 w-[255px] xs:w-[275px] sm:w-[340px] md:w-[375px] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] select-none"
                   >
                     <div
                       className={`w-full rounded-3xl overflow-hidden bg-white text-[#101832] transition-all duration-300 border ${
@@ -891,7 +891,7 @@ export default function Home() {
           <div className="mt-14 sm:mt-16 text-center">
             <Link
               href="/book-a-call"
-              className="inline-flex items-center gap-2 bg-[#7c35ed] hover:bg-[#6d28d9] text-white font-bold text-sm px-8 py-4 rounded-full shadow-[0_8px_20px_rgba(124,58,237,0.3)] hover:shadow-[0_12px_28px_rgba(124,58,237,0.45)] hover:scale-102 transition-all group"
+              className="inline-flex items-center gap-2 bg-[#7c35ed] hover:bg-[#6d28d9] text-white font-bold text-xs min-[360px]:text-sm px-5 sm:px-8 py-3.5 sm:py-4 rounded-full shadow-[0_8px_20px_rgba(124,58,237,0.3)] hover:shadow-[0_12px_28px_rgba(124,58,237,0.45)] hover:scale-102 transition-all group whitespace-nowrap"
             >
               <span>Schedule Step 1: Your Free Discovery Call</span>
               <span className="group-hover:translate-x-1 transition-transform">→</span>
@@ -971,7 +971,7 @@ export default function Home() {
             
             {/* Slider viewport */}
             <div
-              className="relative w-full h-[520px] sm:h-[610px] md:h-[670px] lg:h-[720px] overflow-hidden flex items-center justify-center select-none"
+              className="relative w-full h-[520px] sm:h-[610px] md:h-[670px] lg:h-[720px] overflow-hidden flex items-center justify-center select-none [--proof-shift:74%] sm:[--proof-shift:95%] md:[--proof-shift:104%]"
               onTouchStart={handleTouchStart}
               onTouchEnd={handleTouchEnd}
             >
@@ -1257,10 +1257,10 @@ export default function Home() {
             Schedule a brief 15-minute discovery session today. We will show you exactly where your current website is leaking leads and how our automated engine turns missed opportunities into revenue.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto max-w-md sm:max-w-none">
             <Link
               href="/book-a-call"
-              className="w-full sm:w-auto bg-[#7c35ed] hover:bg-[#6d28d9] text-white font-bold text-base px-9 py-4 rounded-full shadow-[0_12px_28px_rgba(124,58,237,0.4)] hover:shadow-[0_16px_36px_rgba(124,58,237,0.6)] hover:scale-102 transition-all flex items-center justify-center gap-2 group"
+              className="w-full sm:w-auto bg-[#7c35ed] hover:bg-[#6d28d9] text-white font-bold text-xs min-[360px]:text-[13px] sm:text-base px-4 min-[360px]:px-5 sm:px-9 py-3.5 sm:py-4 rounded-full shadow-[0_12px_28px_rgba(124,58,237,0.4)] hover:shadow-[0_16px_36px_rgba(124,58,237,0.6)] hover:scale-102 transition-all flex items-center justify-center gap-2 group whitespace-nowrap"
             >
               <span>Book Your Free Growth Strategy Call</span>
               <span className="group-hover:translate-x-1 transition-transform">→</span>
@@ -1268,7 +1268,7 @@ export default function Home() {
 
             <a
               href="tel:+18888100013"
-              className="w-full sm:w-auto bg-white/10 hover:bg-white/15 text-white font-semibold text-base px-8 py-4 rounded-full border border-white/20 transition-all flex items-center justify-center gap-2"
+              className="w-full sm:w-auto bg-white/10 hover:bg-white/15 text-white font-semibold text-xs min-[360px]:text-[13px] sm:text-base px-5 sm:px-8 py-3.5 sm:py-4 rounded-full border border-white/20 transition-all flex items-center justify-center gap-2 whitespace-nowrap"
             >
               <span>Call Us: (888) 810-0013</span>
             </a>
