@@ -498,8 +498,20 @@ export default function Header() {
               className="relative group overflow-hidden bg-gradient-to-r from-[#7c35ed] to-[#6d28d9] hover:from-[#6d28d9] hover:to-[#7c35ed] text-white font-bold text-[13px] sm:text-[14px] px-4 sm:px-5 py-2 sm:py-2.5 rounded-full shadow-[0_8px_20px_rgba(124,58,237,0.25)] hover:shadow-[0_10px_26px_rgba(124,58,237,0.38)] transition-all flex items-center gap-2"
             >
               <span>Book a Call</span>
-              <span className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center text-xs group-hover:translate-x-0.5 transition-transform">
-                →
+              <span className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 group-hover:translate-x-0.5 transition-transform">
+                <svg
+                  className="w-2.5 h-2.5 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                  />
+                </svg>
               </span>
             </Link>
 
@@ -508,26 +520,28 @@ export default function Header() {
             {/* Mobile Hamburger Toggle Button */}
             <button
               type="button"
-              className="lg:hidden w-10 h-10 rounded-xl bg-gray-100 hover:bg-gray-200 flex flex-col items-center justify-center gap-1 transition-colors"
+              className="lg:hidden w-10 h-10 rounded-xl bg-[#f5f3ff] hover:bg-[#ede9fe] border border-[#7c35ed]/20 flex flex-col items-center justify-center transition-colors shadow-xs"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle Navigation Menu"
               aria-expanded={mobileMenuOpen}
             >
-              <span
-                className={`w-5 h-0.5 bg-[#101832] transition-transform duration-300 ${
-                  mobileMenuOpen ? "rotate-45 translate-y-1.5" : ""
-                }`}
-              />
-              <span
-                className={`w-5 h-0.5 bg-[#101832] transition-opacity duration-300 ${
-                  mobileMenuOpen ? "opacity-0" : ""
-                }`}
-              />
-              <span
-                className={`w-5 h-0.5 bg-[#101832] transition-transform duration-300 ${
-                  mobileMenuOpen ? "-rotate-45 -translate-y-1.5" : ""
-                }`}
-              />
+              <div className="w-5 flex flex-col items-end gap-1.5">
+                <span
+                  className={`w-5 h-[2.5px] rounded-full bg-[#7c35ed] transition-all duration-300 ${
+                    mobileMenuOpen ? "rotate-45 translate-y-[8.5px]" : ""
+                  }`}
+                />
+                <span
+                  className={`h-[2.5px] rounded-full bg-[#7c35ed] transition-all duration-300 ${
+                    mobileMenuOpen ? "w-0 opacity-0" : "w-3.5 opacity-100"
+                  }`}
+                />
+                <span
+                  className={`w-5 h-[2.5px] rounded-full bg-[#7c35ed] transition-all duration-300 ${
+                    mobileMenuOpen ? "-rotate-45 -translate-y-[8.5px]" : ""
+                  }`}
+                />
+              </div>
             </button>
           </div>
         </div>
@@ -543,7 +557,7 @@ export default function Header() {
           />
 
           {/* Drawer Menu Body */}
-          <div className="relative mt-20 mx-3 bg-white rounded-3xl shadow-2xl border border-gray-100 p-6 max-h-[calc(100vh-100px)] overflow-y-auto z-50 flex flex-col gap-5">
+          <div className="relative mt-24 sm:mt-26 mx-3 bg-white rounded-3xl shadow-2xl border border-gray-100 p-6 max-h-[calc(100vh-116px)] overflow-y-auto z-50 flex flex-col gap-5">
             {/* Top actions inside drawer */}
             <div className="flex items-center justify-between pb-3 border-b border-gray-100">
               <span className="text-sm font-bold text-gray-400 uppercase tracking-wider">
@@ -665,11 +679,25 @@ export default function Header() {
             <div className="pt-4 border-t border-gray-100 flex flex-col gap-3">
               <Link
                 href="/book-a-call"
-                className="w-full bg-[#7c35ed] text-white text-center font-bold py-3 rounded-xl shadow-md flex items-center justify-center gap-2"
+                className="w-full bg-[#7c35ed] text-white text-center font-bold py-3 rounded-xl shadow-md flex items-center justify-center gap-2 group"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span>Book a Call</span>
-                <span>→</span>
+                <span className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 group-hover:translate-x-0.5 transition-transform">
+                  <svg
+                    className="w-2.5 h-2.5 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </span>
               </Link>
 
 

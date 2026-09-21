@@ -4,27 +4,22 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-// Trade Items for Carousel (12 trades across 2 pages)
-const tradePages = [
-  // Page 1
-  [
-    { name: "Roofing", image: "/assets/images/roofing.jpg", desc: "Roof replacement, storm repairs & inspections" },
-    { name: "Plumbing", image: "/assets/images/plumbing.jpg", desc: "Emergency calls, repiping & water heater installs" },
-    { name: "HVAC", image: "/assets/images/hvac.jpg", desc: "Heating, ventilation & AC repair and installation" },
-    { name: "Electrician", image: "/assets/images/electrician.jpg", desc: "Panel upgrades, EV chargers & residential wiring" },
-    { name: "Painters", image: "/assets/images/painters.jpg", desc: "Interior, exterior & cabinet refinishing projects" },
-    { name: "Handyman", image: "/assets/images/handyman.jpg", desc: "General home maintenance, carpentry & minor repairs" },
-  ],
-  // Page 2
-  [
-    { name: "Remodeling", image: "/assets/images/remodeling.jpg", desc: "Kitchen remodels, bathroom revamps & home additions" },
-    { name: "Landscapers", image: "/assets/images/landscapers.jpg", desc: "Lawn care, landscape architecture & tree services" },
-    { name: "Pressure Washing", image: "/assets/images/pressure-washing.jpg", desc: "Driveway sealing, siding wash & roof soft-washing" },
-    { name: "Pest Control", image: "/assets/images/pest-control.jpg", desc: "Termite eradication, quarterly barrier treatments & rodent control" },
-    { name: "Flooring & Carpet Cleaning", image: "/assets/images/flooring-carpet-cleaning.jpg", desc: "Hardwood install, tile restoration & deep carpet extraction" },
-    { name: "Windows & Doors", image: "/assets/images/windows-doors.jpg", desc: "Energy-efficient window upgrades & custom exterior doors" },
-  ],
+// Trade Items for Coverflow Carousel (12 trades)
+const tradesList = [
+  { name: "Roofing", image: "/assets/images/roofing.jpg", desc: "Roof replacement, storm repairs & inspections", tag: "Exterior & Structural" },
+  { name: "Plumbing", image: "/assets/images/plumbing.jpg", desc: "Emergency calls, repiping & water heater installs", tag: "Emergency Services" },
+  { name: "HVAC", image: "/assets/images/hvac.jpg", desc: "Heating, ventilation & AC repair and installation", tag: "Heating & Cooling" },
+  { name: "Electrician", image: "/assets/images/electrician.jpg", desc: "Panel upgrades, EV chargers & residential wiring", tag: "Power & Electrical" },
+  { name: "Painters", image: "/assets/images/painters.jpg", desc: "Interior, exterior & cabinet refinishing projects", tag: "Finishing & Coating" },
+  { name: "Handyman", image: "/assets/images/handyman.jpg", desc: "General home maintenance, carpentry & minor repairs", tag: "General Maintenance" },
+  { name: "Remodeling", image: "/assets/images/remodeling.jpg", desc: "Kitchen remodels, bathroom revamps & home additions", tag: "Design & Build" },
+  { name: "Landscapers", image: "/assets/images/landscapers.jpg", desc: "Lawn care, landscape architecture & tree services", tag: "Outdoor Living" },
+  { name: "Pressure Washing", image: "/assets/images/pressure-washing.jpg", desc: "Driveway sealing, siding wash & roof soft-washing", tag: "Surface Restoration" },
+  { name: "Pest Control", image: "/assets/images/pest-control.jpg", desc: "Termite eradication, barrier treatments & rodent control", tag: "Extermination" },
+  { name: "Flooring & Carpet", image: "/assets/images/flooring-carpet-cleaning.jpg", desc: "Hardwood install, tile restoration & deep carpet extraction", tag: "Flooring & Surfaces" },
+  { name: "Windows & Doors", image: "/assets/images/windows-doors.jpg", desc: "Energy-efficient window upgrades & custom exterior doors", tag: "Energy & Security" },
 ];
+
 
 // Proof / Review screenshots
 const reviewImages = [
@@ -81,11 +76,97 @@ const partnerLogos = [
 ];
 
 export default function Home() {
-  const [currentTradePage, setCurrentTradePage] = useState(0);
+  const [activeTradeIndex, setActiveTradeIndex] = useState(2);
+  const [tradeTouchStartX, setTradeTouchStartX] = useState<number | null>(null);
   const [selectedProofImg, setSelectedProofImg] = useState<string | null>(null);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [activeProofIndex, setActiveProofIndex] = useState(1);
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
+
+  const handlePrevTrade = () => {
+    setActiveTradeIndex((prev) => (prev === 0 ? tradesList.length - 1 : prev - 1));
+  };
+
+  const handleNextTrade = () => {
+    setActiveTradeIndex((prev) => (prev === tradesList.length - 1 ? 0 : prev + 1));
+  };
+
+  const handleTradeTouchStart = (e: React.TouchEvent) => {
+    setTradeTouchStartX(e.touches[0].clientX);
+  };
+
+  const handleTradeTouchEnd = (e: React.TouchEvent) => {
+    if (tradeTouchStartX === null) return;
+    const diffX = tradeTouchStartX - e.changedTouches[0].clientX;
+    if (diffX > 40) {
+      handleNextTrade();
+    } else if (diffX < -40) {
+      handlePrevTrade();
+    }
+    setTradeTouchStartX(null);
+  };
+
+  const getTradeCardStyle = (idx: number): React.CSSProperties => {
+    const totalTrades = tradesList.length;
+    let diff = idx - activeTradeIndex;
+    if (diff > Math.floor(totalTrades / 2)) diff -= totalTrades;
+    if (diff < -Math.floor(totalTrades / 2)) diff += totalTrades;
+
+    switch (diff) {
+      case 0:
+        return {
+          transform: "translate(-50%, -50%) scale(1)",
+          zIndex: 30,
+          opacity: 1,
+          pointerEvents: "auto",
+          cursor: "pointer",
+        };
+      case -1:
+        return {
+          transform: "translate(calc(-50% - 104%), -50%) scale(0.85)",
+          zIndex: 20,
+          opacity: 0.65,
+          pointerEvents: "auto",
+          cursor: "pointer",
+        };
+      case 1:
+        return {
+          transform: "translate(calc(-50% + 104%), -50%) scale(0.85)",
+          zIndex: 20,
+          opacity: 0.65,
+          pointerEvents: "auto",
+          cursor: "pointer",
+        };
+      case -2:
+        return {
+          transform: "translate(calc(-50% - 196%), -50%) scale(0.68)",
+          zIndex: 10,
+          opacity: 0.25,
+          pointerEvents: "auto",
+          cursor: "pointer",
+        };
+      case 2:
+        return {
+          transform: "translate(calc(-50% + 196%), -50%) scale(0.68)",
+          zIndex: 10,
+          opacity: 0.25,
+          pointerEvents: "auto",
+          cursor: "pointer",
+        };
+      default:
+        return {
+          transform:
+            diff > 0
+              ? "translate(calc(-50% + 260%), -50%) scale(0.5)"
+              : "translate(calc(-50% - 260%), -50%) scale(0.5)",
+          zIndex: 0,
+          opacity: 0,
+          pointerEvents: "none",
+          cursor: "default",
+        };
+    }
+  };
+
 
   const handlePrevProof = () => {
     setActiveProofIndex((prev) => (prev === 0 ? reviewImages.length - 1 : prev - 1));
@@ -571,33 +652,42 @@ export default function Home() {
       </section>
 
       {/* ========================================================================= */}
-      {/* 3. TRADES WE SERVE INTERACTIVE CAROUSEL (12 TRADES, MATCHING SCREENSHOTS) */}
+      {/* 3. TRADES WE SERVE COVERFLOW CAROUSEL (IDENTICAL TO REVIEWS CAROUSEL)    */}
       {/* ========================================================================= */}
-      <section className="py-24 sm:py-32 bg-[#101832] text-white relative">
-        <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-12">
+      <section className="py-24 sm:py-32 bg-[#101832] text-white relative overflow-hidden">
+        {/* Ambient background glows */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[450px] bg-[#7c35ed]/15 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
           
           {/* Header */}
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-[#7c35ed] text-xs sm:text-sm font-extrabold uppercase tracking-widest block mb-3">
+          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+            <span className="text-[#c084fc] text-xs sm:text-sm font-extrabold uppercase tracking-widest block mb-3">
               Specialized Industry Solutions
             </span>
             <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight mb-4">
-              Engineered specifically for trade & contractor businesses
+              Engineered specifically for trade &amp; contractor businesses
             </h2>
-            <p className="text-gray-400 text-base sm:text-lg">
+            <p className="text-gray-300 text-base sm:text-lg">
               Whether you install roofs, remodel bathrooms, or provide emergency HVAC repair, our system is tailored to your exact project workflow.
             </p>
           </div>
 
-          {/* Carousel Container with Buttons on Left & Right */}
-          <div className="flex flex-col gap-10">
-            <div className="flex items-center gap-2 sm:gap-4 lg:gap-6 w-full">
-              {/* Prev Button (Left) */}
+          {/* Coverflow Carousel Stage */}
+          <div className="relative max-w-6xl mx-auto">
+            
+            {/* Slider viewport */}
+            <div
+              className="relative w-full h-[480px] sm:h-[530px] md:h-[560px] overflow-hidden flex items-center justify-center select-none"
+              onTouchStart={handleTradeTouchStart}
+              onTouchEnd={handleTradeTouchEnd}
+            >
+              {/* Previous Button (Floating Left) */}
               <button
                 type="button"
-                onClick={() => setCurrentTradePage(currentTradePage === 0 ? 1 : 0)}
-                className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-full bg-gradient-to-r from-[#7c35ed] to-[#9333ea] hover:from-[#6d28d9] hover:to-[#7c35ed] text-white flex items-center justify-center flex-shrink-0 shadow-[0_8px_24px_rgba(124,58,237,0.45)] hover:shadow-[0_12px_28px_rgba(124,58,237,0.65)] hover:scale-105 active:scale-95 transition-all cursor-pointer"
-                aria-label="Previous trades"
+                onClick={handlePrevTrade}
+                className="absolute left-1 sm:left-3 md:left-6 z-40 w-11 h-11 sm:w-13 sm:h-13 md:w-14 md:h-14 rounded-full bg-gradient-to-r from-[#7c35ed] to-[#9333ea] hover:from-[#6d28d9] hover:to-[#7c35ed] text-white flex items-center justify-center flex-shrink-0 shadow-[0_8px_24px_rgba(124,58,237,0.45)] hover:shadow-[0_12px_28px_rgba(124,58,237,0.65)] hover:scale-105 active:scale-95 transition-all cursor-pointer"
+                aria-label="Previous trade"
               >
                 <svg
                   className="w-5 h-5 sm:w-6 sm:h-6 text-white"
@@ -610,38 +700,12 @@ export default function Home() {
                 </svg>
               </button>
 
-              {/* Grid Container (6 cards in between) */}
-              <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8 transition-all duration-500">
-                {tradePages[currentTradePage].map((trade) => (
-                  <div
-                    key={trade.name}
-                    className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl border border-gray-100 flex flex-col group hover:-translate-y-1 transition-all duration-300"
-                  >
-                    <div className="relative h-48 sm:h-56 w-full overflow-hidden bg-gray-100">
-                      <img
-                        src={trade.image}
-                        alt={trade.name}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                    </div>
-                    <div className="p-5 sm:p-6 flex flex-col items-center text-center bg-white">
-                      <h3 className="text-xl sm:text-2xl font-black text-[#101832] mb-1">
-                        {trade.name}
-                      </h3>
-                      <p className="text-xs sm:text-sm text-[#566073] line-clamp-2">
-                        {trade.desc}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Next Button (Right) */}
+              {/* Next Button (Floating Right) */}
               <button
                 type="button"
-                onClick={() => setCurrentTradePage(currentTradePage === 1 ? 0 : 1)}
-                className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-full bg-gradient-to-r from-[#7c35ed] to-[#9333ea] hover:from-[#6d28d9] hover:to-[#7c35ed] text-white flex items-center justify-center flex-shrink-0 shadow-[0_8px_24px_rgba(124,58,237,0.45)] hover:shadow-[0_12px_28px_rgba(124,58,237,0.65)] hover:scale-105 active:scale-95 transition-all cursor-pointer"
-                aria-label="Next trades"
+                onClick={handleNextTrade}
+                className="absolute right-1 sm:right-3 md:right-6 z-40 w-11 h-11 sm:w-13 sm:h-13 md:w-14 md:h-14 rounded-full bg-gradient-to-r from-[#7c35ed] to-[#9333ea] hover:from-[#6d28d9] hover:to-[#7c35ed] text-white flex items-center justify-center flex-shrink-0 shadow-[0_8px_24px_rgba(124,58,237,0.45)] hover:shadow-[0_12px_28px_rgba(124,58,237,0.65)] hover:scale-105 active:scale-95 transition-all cursor-pointer"
+                aria-label="Next trade"
               >
                 <svg
                   className="w-5 h-5 sm:w-6 sm:h-6 text-white"
@@ -653,31 +717,84 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                 </svg>
               </button>
+
+              {/* Carousel Trade Cards */}
+              {tradesList.map((trade, idx) => {
+                const totalTrades = tradesList.length;
+                let diff = idx - activeTradeIndex;
+                if (diff > Math.floor(totalTrades / 2)) diff -= totalTrades;
+                if (diff < -Math.floor(totalTrades / 2)) diff += totalTrades;
+
+                const isCenter = diff === 0;
+
+                return (
+                  <div
+                    key={trade.name}
+                    style={getTradeCardStyle(idx)}
+                    onClick={() => setActiveTradeIndex(idx)}
+                    className="absolute top-1/2 left-1/2 w-[280px] sm:w-[340px] md:w-[375px] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] select-none"
+                  >
+                    <div
+                      className={`w-full rounded-3xl overflow-hidden bg-white text-[#101832] transition-all duration-300 border ${
+                        isCenter
+                          ? "shadow-[0_25px_60px_rgba(124,58,237,0.5)] ring-4 ring-[#7c35ed]/50 border-white"
+                          : "shadow-xl border-gray-200/50"
+                      }`}
+                    >
+                      {/* Trade Image */}
+                      <div className="relative h-48 sm:h-56 md:h-60 w-full overflow-hidden bg-gray-100">
+                        <img
+                          src={trade.image}
+                          alt={trade.name}
+                          draggable={false}
+                          className="w-full h-full object-cover transition-transform duration-500 select-none pointer-events-none"
+                        />
+                        <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-[#101832]/85 backdrop-blur-md text-white text-[11px] font-bold tracking-wide border border-white/10">
+                          {trade.tag}
+                        </div>
+                      </div>
+
+                      {/* Trade Details */}
+                      <div className="p-6 sm:p-7 flex flex-col items-center text-center bg-white">
+                        <h3 className="text-2xl sm:text-3xl font-black text-[#101832] mb-2 tracking-tight">
+                          {trade.name}
+                        </h3>
+                        <p className="text-xs sm:text-sm text-[#566073] leading-relaxed line-clamp-2 mb-4">
+                          {trade.desc}
+                        </p>
+                        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#f5f3ff] text-[#7c35ed] text-xs font-bold border border-[#ede9fe]">
+                          <span>Tailored Automation</span>
+                          <span>✓</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
 
-            {/* Page Indicators */}
-            <div className="flex items-center justify-center gap-3">
-              <button
-                type="button"
-                onClick={() => setCurrentTradePage(0)}
-                className={`h-2.5 rounded-full transition-all cursor-pointer ${
-                  currentTradePage === 0 ? "w-8 bg-[#7c35ed]" : "w-2.5 bg-gray-600 hover:bg-gray-400"
-                }`}
-                aria-label="Trade page 1"
-              />
-              <button
-                type="button"
-                onClick={() => setCurrentTradePage(1)}
-                className={`h-2.5 rounded-full transition-all cursor-pointer ${
-                  currentTradePage === 1 ? "w-8 bg-[#7c35ed]" : "w-2.5 bg-gray-600 hover:bg-gray-400"
-                }`}
-                aria-label="Trade page 2"
-              />
+            {/* Pagination Dots */}
+            <div className="flex items-center justify-center gap-2 mt-6 sm:mt-8">
+              {tradesList.map((_, dotIdx) => (
+                <button
+                  key={dotIdx}
+                  type="button"
+                  onClick={() => setActiveTradeIndex(dotIdx)}
+                  aria-label={`Go to trade ${dotIdx + 1}`}
+                  className={`transition-all duration-300 rounded-full cursor-pointer ${
+                    dotIdx === activeTradeIndex
+                      ? "w-8 h-2.5 bg-[#7c35ed]"
+                      : "w-2.5 h-2.5 bg-white/20 hover:bg-white/40"
+                  }`}
+                />
+              ))}
             </div>
+
           </div>
 
         </div>
       </section>
+
 
       {/* ========================================================================= */}
       {/* 4. STREAMLINED THREE-STEP PROCESS SECTION */}
