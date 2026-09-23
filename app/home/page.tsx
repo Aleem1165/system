@@ -922,7 +922,7 @@ export default function Home() {
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#ff7a1a] to-[#ea580c] group-hover:h-1.5 transition-all duration-300" />
               <div>
                 <div className="flex items-center justify-between gap-4 mb-6">
-                  <span className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#ff7a1a] to-[#ea580c] text-white font-extrabold text-lg flex items-center justify-center shadow-[0_6px_16px_rgba(255,122,26,0.35)] flex-shrink-0">
+                  <span className="w-12 h-12 rounded-2xl bg-[#121316] text-white font-extrabold text-lg flex items-center justify-center border border-white/10 shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.15)] flex-shrink-0">
                     01
                   </span>
                   <span className="px-3.5 py-1.5 rounded-full bg-[#fff7ed] text-[#ea580c] text-xs font-bold tracking-wide border border-[#ff7a1a]/15">
@@ -943,7 +943,7 @@ export default function Home() {
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#ff7a1a] to-[#ea580c] group-hover:h-1.5 transition-all duration-300" />
               <div>
                 <div className="flex items-center justify-between gap-4 mb-6">
-                  <span className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#ff7a1a] to-[#ea580c] text-white font-extrabold text-lg flex items-center justify-center shadow-[0_6px_16px_rgba(255,122,26,0.35)] flex-shrink-0">
+                  <span className="w-12 h-12 rounded-2xl bg-[#121316] text-white font-extrabold text-lg flex items-center justify-center border border-white/10 shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.15)] flex-shrink-0">
                     02
                   </span>
                   <span className="px-3.5 py-1.5 rounded-full bg-[#fff7ed] text-[#ea580c] text-xs font-bold tracking-wide border border-[#ff7a1a]/15">
@@ -964,7 +964,7 @@ export default function Home() {
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#ff7a1a] to-[#ea580c] group-hover:h-1.5 transition-all duration-300" />
               <div>
                 <div className="flex items-center justify-between gap-4 mb-6">
-                  <span className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#ff7a1a] to-[#ea580c] text-white font-extrabold text-lg flex items-center justify-center shadow-[0_6px_16px_rgba(255,122,26,0.35)] flex-shrink-0">
+                  <span className="w-12 h-12 rounded-2xl bg-[#121316] text-white font-extrabold text-lg flex items-center justify-center border border-white/10 shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.15)] flex-shrink-0">
                     03
                   </span>
                   <span className="px-3.5 py-1.5 rounded-full bg-[#fff7ed] text-[#ea580c] text-xs font-bold tracking-wide border border-[#ff7a1a]/15">
