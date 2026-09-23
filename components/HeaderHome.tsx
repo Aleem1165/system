@@ -321,21 +321,25 @@ export default function Header() {
             >
               <button
                 type="button"
-                className={`flex items-center gap-1.5 py-2 px-1 hover:text-[#ea580c] transition-colors cursor-pointer ${solutionsOpen ? "text-[#ea580c]" : ""
-                  }`}
+                className={`relative group/nav flex items-center gap-1.5 py-2 px-1 text-[#101832] hover:text-gray-600 transition-colors cursor-pointer ${solutionsOpen ? "text-gray-600" : ""}`}
                 onClick={() => setSolutionsOpen(!solutionsOpen)}
                 aria-expanded={solutionsOpen}
               >
                 <span>Solutions</span>
                 <svg
-                  className={`w-3.5 h-3.5 transition-transform duration-200 ${solutionsOpen ? "rotate-180 text-[#ea580c]" : "text-gray-400"
-                    }`}
+                  className={`w-3.5 h-3.5 transition-transform duration-200 ${solutionsOpen ? "rotate-180 text-gray-600" : "text-gray-400"}`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
                 </svg>
+                {/* Animated Orange Underline */}
+                <span
+                  className={`absolute bottom-0 left-0 h-[2px] bg-[#ff7a1a] rounded-full transition-all duration-300 ease-out ${
+                    solutionsOpen ? "w-full" : "w-0 group-hover/nav:w-full"
+                  }`}
+                />
               </button>
 
               {/* Mega Menu Overlay */}
@@ -353,9 +357,9 @@ export default function Header() {
                         <Link
                           key={item.href}
                           href={item.href}
-                          className="flex items-start gap-3 p-2.5 rounded-xl hover:bg-[#fff7ed] text-[#101832] hover:text-[#ea580c] transition-all group"
+                          className="flex items-start gap-3 p-2.5 rounded-xl hover:bg-gray-100 text-[#101832] transition-all group"
                         >
-                          <div className="w-8 h-8 rounded-lg bg-gray-50 group-hover:bg-white text-[#ea580c] flex items-center justify-center flex-shrink-0 transition-colors shadow-xs">
+                          <div className="w-8 h-8 rounded-lg bg-gray-50 group-hover:bg-white text-gray-700 flex items-center justify-center flex-shrink-0 transition-colors shadow-xs">
                             {item.icon}
                           </div>
                           <div>
@@ -381,9 +385,9 @@ export default function Header() {
                         <Link
                           key={item.href}
                           href={item.href}
-                          className="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-[#fff7ed] text-[13px] font-semibold text-[#101832] hover:text-[#ea580c] transition-colors group"
+                          className="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-gray-100 text-[13px] font-semibold text-[#101832] transition-colors group"
                         >
-                          <div className="w-6 h-6 rounded-md bg-gray-50 group-hover:bg-white text-[#ea580c] flex items-center justify-center flex-shrink-0">
+                          <div className="w-6 h-6 rounded-md bg-gray-50 group-hover:bg-white text-gray-700 flex items-center justify-center flex-shrink-0">
                             {item.icon}
                           </div>
                           <span className="truncate">{item.title}</span>
@@ -398,19 +402,27 @@ export default function Header() {
             {/* Who We Help Link */}
             <Link
               href="/who-we-help"
-              className={`hover:text-[#ea580c] transition-colors ${pathname === "/who-we-help" ? "text-[#ea580c]" : ""
-                }`}
+              className={`relative group/nav py-2 text-[#101832] hover:text-gray-600 transition-colors ${pathname === "/who-we-help" ? "text-gray-600" : ""}`}
             >
-              Who We Help
+              <span>Who We Help</span>
+              <span
+                className={`absolute bottom-0 left-0 h-[2px] bg-[#ff7a1a] rounded-full transition-all duration-300 ease-out ${
+                  pathname === "/who-we-help" ? "w-full" : "w-0 group-hover/nav:w-full"
+                }`}
+              />
             </Link>
 
             {/* Pricing Link */}
             <Link
               href="/pricing"
-              className={`hover:text-[#ea580c] transition-colors ${pathname === "/pricing" ? "text-[#ea580c]" : ""
-                }`}
+              className={`relative group/nav py-2 text-[#101832] hover:text-gray-600 transition-colors ${pathname === "/pricing" ? "text-gray-600" : ""}`}
             >
-              Pricing
+              <span>Pricing</span>
+              <span
+                className={`absolute bottom-0 left-0 h-[2px] bg-[#ff7a1a] rounded-full transition-all duration-300 ease-out ${
+                  pathname === "/pricing" ? "w-full" : "w-0 group-hover/nav:w-full"
+                }`}
+              />
             </Link>
 
             {/* About Dropdown */}
@@ -421,21 +433,25 @@ export default function Header() {
             >
               <button
                 type="button"
-                className={`flex items-center gap-1.5 py-2 px-1 hover:text-[#ea580c] transition-colors cursor-pointer ${aboutOpen ? "text-[#ea580c]" : ""
-                  }`}
+                className={`relative group/nav flex items-center gap-1.5 py-2 px-1 text-[#101832] hover:text-gray-600 transition-colors cursor-pointer ${aboutOpen ? "text-gray-600" : ""}`}
                 onClick={() => setAboutOpen(!aboutOpen)}
                 aria-expanded={aboutOpen}
               >
                 <span>About</span>
                 <svg
-                  className={`w-3.5 h-3.5 transition-transform duration-200 ${aboutOpen ? "rotate-180 text-[#ea580c]" : "text-gray-400"
-                    }`}
+                  className={`w-3.5 h-3.5 transition-transform duration-200 ${aboutOpen ? "rotate-180 text-gray-600" : "text-gray-400"}`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
                 </svg>
+                {/* Animated Orange Underline */}
+                <span
+                  className={`absolute bottom-0 left-0 h-[2px] bg-[#ff7a1a] rounded-full transition-all duration-300 ease-out ${
+                    aboutOpen ? "w-full" : "w-0 group-hover/nav:w-full"
+                  }`}
+                />
               </button>
 
               {/* About Dropdown Panel */}
@@ -445,9 +461,9 @@ export default function Header() {
                     <Link
                       key={item.href}
                       href={item.href}
-                      className="flex items-start gap-3 p-2.5 rounded-xl hover:bg-[#fff7ed] text-[#101832] hover:text-[#ea580c] transition-all group"
+                      className="flex items-start gap-3 p-2.5 rounded-xl hover:bg-gray-100 text-[#101832] transition-all group"
                     >
-                      <div className="w-8 h-8 rounded-lg bg-gray-50 group-hover:bg-white text-[#ea580c] flex items-center justify-center flex-shrink-0 shadow-xs">
+                      <div className="w-8 h-8 rounded-lg bg-gray-50 group-hover:bg-white text-gray-700 flex items-center justify-center flex-shrink-0 shadow-xs">
                         {item.icon}
                       </div>
                       <div>
@@ -484,13 +500,8 @@ export default function Header() {
             {/* Book a Call Primary Button */}
             <Link
               href="/book-a-call"
-              className="relative group overflow-hidden bg-gradient-to-r from-[#ff7a1a] to-[#ea580c] text-white font-bold text-[13px] sm:text-[14px] px-4 sm:px-5 py-2 sm:py-2.5 rounded-[10px] border border-white/20 shadow-[0_4px_16px_rgba(255,122,26,0.3),inset_0_1px_0_rgba(255,255,255,0.25)] hover:shadow-[0_6px_22px_rgba(255,122,26,0.45)] transition-all duration-500 ease-out flex items-center gap-2"
+              className="relative group overflow-hidden bg-[#121316] hover:bg-[#20222a] text-white font-bold text-[13px] sm:text-[14px] px-5 sm:px-6 py-2 sm:py-2.5 rounded-[10px] border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out flex items-center gap-2 cursor-pointer"
             >
-              {/* Smooth Hover Gradient Cross-fade Layer */}
-              <span
-                aria-hidden="true"
-                className="absolute inset-0 bg-gradient-to-r from-[#ea580c] to-[#ff7a1a] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none"
-              />
               <span className="relative z-10">Book a Call</span>
             </Link>
 
@@ -499,23 +510,26 @@ export default function Header() {
             {/* Mobile Hamburger Toggle Button */}
             <button
               type="button"
-              className="lg:hidden w-10 h-10 rounded-xl bg-[#fff7ed] hover:bg-[#ffedd5] border border-[#ff7a1a]/25 flex flex-col items-center justify-center transition-colors shadow-xs cursor-pointer"
+              className="lg:hidden w-10 h-10 rounded-xl bg-[#121316] hover:bg-[#20222a] border border-white/15 flex flex-col items-center justify-center transition-colors shadow-sm cursor-pointer"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle Navigation Menu"
               aria-expanded={mobileMenuOpen}
             >
               <div className="w-5 flex flex-col items-end gap-1.5">
                 <span
-                  className={`w-5 h-[2.5px] rounded-full bg-[#ff7a1a] transition-all duration-300 ${mobileMenuOpen ? "rotate-45 translate-y-[8.5px]" : ""
-                    }`}
+                  className={`w-5 h-[2px] rounded-full bg-white transition-all duration-300 ${
+                    mobileMenuOpen ? "rotate-45 translate-y-[8px]" : ""
+                  }`}
                 />
                 <span
-                  className={`h-[2.5px] rounded-full bg-[#ff7a1a] transition-all duration-300 ${mobileMenuOpen ? "w-0 opacity-0" : "w-3.5 opacity-100"
-                    }`}
+                  className={`h-[2px] rounded-full bg-white transition-all duration-300 ${
+                    mobileMenuOpen ? "w-0 opacity-0" : "w-3.5 opacity-100"
+                  }`}
                 />
                 <span
-                  className={`w-5 h-[2.5px] rounded-full bg-[#ff7a1a] transition-all duration-300 ${mobileMenuOpen ? "-rotate-45 -translate-y-[8.5px]" : ""
-                    }`}
+                  className={`w-5 h-[2px] rounded-full bg-white transition-all duration-300 ${
+                    mobileMenuOpen ? "-rotate-45 -translate-y-[8px]" : ""
+                  }`}
                 />
               </div>
             </button>
@@ -653,7 +667,7 @@ export default function Header() {
             <div className="pt-4 border-t border-gray-100 flex flex-col gap-3">
               <Link
                 href="/book-a-call"
-                className="w-full bg-gradient-to-r from-[#ff7a1a] to-[#ea580c] hover:from-[#ea580c] hover:to-[#ff7a1a] text-white text-center font-bold py-3 rounded-[10px] shadow-[0_4px_14px_rgba(255,122,26,0.25)] flex items-center justify-center transition-all cursor-pointer"
+                className="w-full bg-[#121316] hover:bg-[#20222a] text-white text-center font-bold py-3 rounded-[10px] border border-white/12 shadow-[0_2px_6px_rgba(0,0,0,0.15)] flex items-center justify-center transition-all cursor-pointer"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span>Book a Call</span>

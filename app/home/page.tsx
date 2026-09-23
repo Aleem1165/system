@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import HeaderHome from "@/components/HeaderHome";
+import FooterHome from "@/components/FooterHome";
 
 // Trade Items for Coverflow Carousel (12 trades)
 const tradesList = [
@@ -253,7 +255,10 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col w-full overflow-hidden bg-white text-[#101832]">
+    <div className="theme-option-2 min-h-screen flex flex-col bg-[#fdfdfd] text-[#101832]">
+      <HeaderHome />
+      <main className="flex-1">
+        <div className="flex flex-col w-full overflow-hidden bg-white text-[#101832]">
 
       {/* ========================================================================= */}
       {/* 1. HERO SECTION */}
@@ -337,12 +342,8 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
               <Link
                 href="/book-a-call"
-                className="relative group overflow-hidden bg-gradient-to-r from-[#ff7a1a] to-[#ea580c] text-white font-bold text-base px-6 py-3.5 rounded-[10px] border border-white/20 shadow-[0_4px_14px_rgba(255,122,26,0.25),inset_0_1px_0_rgba(255,255,255,0.2)] hover:shadow-[0_6px_18px_rgba(255,122,26,0.35)] transition-all duration-500 ease-out flex items-center justify-center gap-3"
+                className="relative group overflow-hidden bg-[#121316] hover:bg-[#20222a] text-white font-bold text-base px-6 py-3.5 rounded-[10px] border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_14px_rgba(0,0,0,0.22),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out flex items-center justify-center gap-3 cursor-pointer"
               >
-                <span
-                  aria-hidden="true"
-                  className="absolute inset-0 bg-gradient-to-r from-[#ea580c] to-[#ff7a1a] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none"
-                />
                 <div className="relative z-10 flex items-center -space-x-2.5 flex-shrink-0">
                   <img
                     src="/assets/images/person.webp"
@@ -488,28 +489,28 @@ export default function Home() {
                 <ul className="flex flex-col gap-4 text-sm text-[#566073] mb-8">
                   <li className="flex items-start gap-3">
                     <span className="w-5 h-5 rounded-full bg-[#ff7a1a]/10 text-[#ea580c] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
-                    <div><strong className="text-[#101832]">Establish Real Credibility:</strong> When someone looks up your company, make a world-class impression that commands higher job prices.</div>
+                    <div><strong className="text-[#ea580c] font-bold">Establish Real Credibility:</strong> When someone looks up your company, make a world-class impression that commands higher job prices.</div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-5 h-5 rounded-full bg-[#ff7a1a]/10 text-[#ea580c] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
-                    <div><strong className="text-[#101832]">Showcase Best Client Reviews:</strong> Prominently display verified customer ratings so newcomers feel immediate confidence.</div>
+                    <div><strong className="text-[#ea580c] font-bold">Showcase Best Client Reviews:</strong> Prominently display verified customer ratings so newcomers feel immediate confidence.</div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-5 h-5 rounded-full bg-[#ff7a1a]/10 text-[#ea580c] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
-                    <div><strong className="text-[#101832]">Built For Smartphone Users:</strong> Over 75% of homeowners look for home repairs on their phones — your site looks razor sharp on all devices.</div>
+                    <div><strong className="text-[#ea580c] font-bold">Built For Smartphone Users:</strong> Over 75% of homeowners look for home repairs on their phones — your site looks razor sharp on all devices.</div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-5 h-5 rounded-full bg-[#ff7a1a]/10 text-[#ea580c] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
-                    <div><strong className="text-[#101832]">Optimized For Local Searches:</strong> Pre-configured with local schema and SEO best practices to attract nearby customers.</div>
+                    <div><strong className="text-[#ea580c] font-bold">Optimized For Local Searches:</strong> Pre-configured with local schema and SEO best practices to attract nearby customers.</div>
                   </li>
                 </ul>
                 <Link
                   href="/functional-website"
-                  className="relative group overflow-hidden bg-gradient-to-r from-[#ff7a1a] to-[#ea580c] text-white font-bold text-sm px-6 py-3 rounded-[10px] border border-white/20 shadow-[0_4px_14px_rgba(255,122,26,0.25),inset_0_1px_0_rgba(255,255,255,0.25)] hover:shadow-[0_6px_20px_rgba(255,122,26,0.4)] transition-all duration-500 ease-out flex items-center gap-2"
+                  className="relative group overflow-hidden bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm px-6 py-3 rounded-[10px] border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out flex items-center gap-2 cursor-pointer"
                 >
                   <span
                     aria-hidden="true"
-                    className="absolute inset-0 bg-gradient-to-r from-[#ea580c] to-[#ff7a1a] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none"
+                    className="absolute inset-0 bg-gradient-to-b from-[#2b2d35] to-[#14151a] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none"
                   />
                   <span className="relative z-10">Learn More About Websites</span>
                 </Link>
@@ -529,24 +530,24 @@ export default function Home() {
                 <ul className="flex flex-col gap-4 text-sm text-[#566073] mb-8">
                   <li className="flex items-start gap-3">
                     <span className="w-5 h-5 rounded-full bg-[#ff7a1a]/10 text-[#ea580c] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
-                    <div><strong className="text-[#101832]">Zero Waiting Time:</strong> Responds to questions in under 2 seconds so prospective clients never leave for another provider.</div>
+                    <div><strong className="text-[#ea580c] font-bold">Zero Waiting Time:</strong> Responds to questions in under 2 seconds so prospective clients never leave for another provider.</div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-5 h-5 rounded-full bg-[#ff7a1a]/10 text-[#ea580c] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
-                    <div><strong className="text-[#101832]">Captures Full Project Details:</strong> Gathers name, street address, job description, and urgency automatically.</div>
+                    <div><strong className="text-[#ea580c] font-bold">Captures Full Project Details:</strong> Gathers name, street address, job description, and urgency automatically.</div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-5 h-5 rounded-full bg-[#ff7a1a]/10 text-[#ea580c] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
-                    <div><strong className="text-[#101832]">Direct Phone Notification:</strong> As soon as a lead submits their details, you receive an immediate text on your phone.</div>
+                    <div><strong className="text-[#ea580c] font-bold">Direct Phone Notification:</strong> As soon as a lead submits their details, you receive an immediate text on your phone.</div>
                   </li>
                 </ul>
                 <Link
                   href="/ai-chat-agent"
-                  className="relative group overflow-hidden bg-gradient-to-r from-[#ff7a1a] to-[#ea580c] text-white font-bold text-sm px-6 py-3 rounded-[10px] border border-white/20 shadow-[0_4px_14px_rgba(255,122,26,0.25),inset_0_1px_0_rgba(255,255,255,0.25)] hover:shadow-[0_6px_20px_rgba(255,122,26,0.4)] transition-all duration-500 ease-out flex items-center gap-2"
+                  className="relative group overflow-hidden bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm px-6 py-3 rounded-[10px] border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out flex items-center gap-2 cursor-pointer"
                 >
                   <span
                     aria-hidden="true"
-                    className="absolute inset-0 bg-gradient-to-r from-[#ea580c] to-[#ff7a1a] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none"
+                    className="absolute inset-0 bg-gradient-to-b from-[#2b2d35] to-[#14151a] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none"
                   />
                   <span className="relative z-10">Explore AI Chat Agent</span>
                 </Link>
@@ -584,24 +585,24 @@ export default function Home() {
                 <ul className="flex flex-col gap-4 text-sm text-[#566073] mb-8">
                   <li className="flex items-start gap-3">
                     <span className="w-5 h-5 rounded-full bg-[#ff7a1a]/10 text-[#ea580c] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
-                    <div><strong className="text-[#101832]">Immediate Response:</strong> Sends an automated SMS within seconds: “Hi, sorry we missed your call! How can our crew help?”</div>
+                    <div><strong className="text-[#ea580c] font-bold">Immediate Response:</strong> Sends an automated SMS within seconds: “Hi, sorry we missed your call! How can our crew help?”</div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-5 h-5 rounded-full bg-[#ff7a1a]/10 text-[#ea580c] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
-                    <div><strong className="text-[#101832]">Stops The Shopping Cycle:</strong> Homeowners stop calling down the Google search list because you engaged them first.</div>
+                    <div><strong className="text-[#ea580c] font-bold">Stops The Shopping Cycle:</strong> Homeowners stop calling down the Google search list because you engaged them first.</div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-5 h-5 rounded-full bg-[#ff7a1a]/10 text-[#ea580c] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
-                    <div><strong className="text-[#101832]">Two-Way Conversation:</strong> Homeowners reply with their project specs so you can respond whenever you step off the ladder.</div>
+                    <div><strong className="text-[#ea580c] font-bold">Two-Way Conversation:</strong> Homeowners reply with their project specs so you can respond whenever you step off the ladder.</div>
                   </li>
                 </ul>
                 <Link
                   href="/missed-call-text-back"
-                  className="relative group overflow-hidden bg-gradient-to-r from-[#ff7a1a] to-[#ea580c] text-white font-bold text-sm px-6 py-3 rounded-[10px] border border-white/20 shadow-[0_4px_14px_rgba(255,122,26,0.25),inset_0_1px_0_rgba(255,255,255,0.25)] hover:shadow-[0_6px_20px_rgba(255,122,26,0.4)] transition-all duration-500 ease-out flex items-center gap-2"
+                  className="relative group overflow-hidden bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm px-6 py-3 rounded-[10px] border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out flex items-center gap-2 cursor-pointer"
                 >
                   <span
                     aria-hidden="true"
-                    className="absolute inset-0 bg-gradient-to-r from-[#ea580c] to-[#ff7a1a] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none"
+                    className="absolute inset-0 bg-gradient-to-b from-[#2b2d35] to-[#14151a] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none"
                   />
                   <span className="relative z-10">See Missed Call Workflow</span>
                 </Link>
@@ -621,24 +622,24 @@ export default function Home() {
                 <ul className="flex flex-col gap-4 text-sm text-[#566073] mb-8">
                   <li className="flex items-start gap-3">
                     <span className="w-5 h-5 rounded-full bg-[#ff7a1a]/10 text-[#ea580c] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
-                    <div><strong className="text-[#101832]">Hands-Free Requests:</strong> Timed text requests go out automatically when an invoice is marked paid.</div>
+                    <div><strong className="text-[#ea580c] font-bold">Hands-Free Requests:</strong> Timed text requests go out automatically when an invoice is marked paid.</div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-5 h-5 rounded-full bg-[#ff7a1a]/10 text-[#ea580c] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
-                    <div><strong className="text-[#101832]">Direct Google Review Links:</strong> One tap takes happy clients straight to your review form with zero friction.</div>
+                    <div><strong className="text-[#ea580c] font-bold">Direct Google Review Links:</strong> One tap takes happy clients straight to your review form with zero friction.</div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-5 h-5 rounded-full bg-[#ff7a1a]/10 text-[#ea580c] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
-                    <div><strong className="text-[#101832]">Boost Local Google Rank:</strong> A high steady volume of 5-star ratings is the #1 ranking factor for Google Maps.</div>
+                    <div><strong className="text-[#ea580c] font-bold">Boost Local Google Rank:</strong> A high steady volume of 5-star ratings is the #1 ranking factor for Google Maps.</div>
                   </li>
                 </ul>
                 <Link
                   href="/review-funnel"
-                  className="relative group overflow-hidden bg-gradient-to-r from-[#ff7a1a] to-[#ea580c] text-white font-bold text-sm px-6 py-3 rounded-[10px] border border-white/20 shadow-[0_4px_14px_rgba(255,122,26,0.25),inset_0_1px_0_rgba(255,255,255,0.25)] hover:shadow-[0_6px_20px_rgba(255,122,26,0.4)] transition-all duration-500 ease-out flex items-center gap-2"
+                  className="relative group overflow-hidden bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm px-6 py-3 rounded-[10px] border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out flex items-center gap-2 cursor-pointer"
                 >
                   <span
                     aria-hidden="true"
-                    className="absolute inset-0 bg-gradient-to-r from-[#ea580c] to-[#ff7a1a] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none"
+                    className="absolute inset-0 bg-gradient-to-b from-[#2b2d35] to-[#14151a] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none"
                   />
                   <span className="relative z-10">Discover Review Funnel</span>
                 </Link>
@@ -676,24 +677,24 @@ export default function Home() {
                 <ul className="flex flex-col gap-4 text-sm text-[#566073] mb-8">
                   <li className="flex items-start gap-3">
                     <span className="w-5 h-5 rounded-full bg-[#ff7a1a]/10 text-[#ea580c] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
-                    <div><strong className="text-[#101832]">Fill Slow Seasons Fast:</strong> Send targeted SMS offers to 100s of past clients in literally under 60 seconds.</div>
+                    <div><strong className="text-[#ea580c] font-bold">Fill Slow Seasons Fast:</strong> Send targeted SMS offers to 100s of past clients in literally under 60 seconds.</div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-5 h-5 rounded-full bg-[#ff7a1a]/10 text-[#ea580c] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
-                    <div><strong className="text-[#101832]">Pre-Written Contractor Templates:</strong> Proven copy crafted to generate bookings without sounding like spam.</div>
+                    <div><strong className="text-[#ea580c] font-bold">Pre-Written Contractor Templates:</strong> Proven copy crafted to generate bookings without sounding like spam.</div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-5 h-5 rounded-full bg-[#ff7a1a]/10 text-[#ea580c] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
-                    <div><strong className="text-[#101832]">Pure Profit:</strong> Zero ad spend required — leverage the client relationships you have already built.</div>
+                    <div><strong className="text-[#ea580c] font-bold">Pure Profit:</strong> Zero ad spend required — leverage the client relationships you have already built.</div>
                   </li>
                 </ul>
                 <Link
                   href="/one-click-campaigns"
-                  className="relative group overflow-hidden bg-gradient-to-r from-[#ff7a1a] to-[#ea580c] text-white font-bold text-sm px-6 py-3 rounded-[10px] border border-white/20 shadow-[0_4px_14px_rgba(255,122,26,0.25),inset_0_1px_0_rgba(255,255,255,0.25)] hover:shadow-[0_6px_20px_rgba(255,122,26,0.4)] transition-all duration-500 ease-out flex items-center gap-2"
+                  className="relative group overflow-hidden bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm px-6 py-3 rounded-[10px] border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out flex items-center gap-2 cursor-pointer"
                 >
                   <span
                     aria-hidden="true"
-                    className="absolute inset-0 bg-gradient-to-r from-[#ea580c] to-[#ff7a1a] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none"
+                    className="absolute inset-0 bg-gradient-to-b from-[#2b2d35] to-[#14151a] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none"
                   />
                   <span className="relative z-10">Explore Reactivation Campaigns</span>
                 </Link>
@@ -713,24 +714,24 @@ export default function Home() {
                 <ul className="flex flex-col gap-4 text-sm text-[#566073] mb-8">
                   <li className="flex items-start gap-3">
                     <span className="w-5 h-5 rounded-full bg-[#ff7a1a]/10 text-[#ea580c] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
-                    <div><strong className="text-[#101832]">Google Map Pack Top 3:</strong> Position your business where 70% of phone calls originate on Google Maps.</div>
+                    <div><strong className="text-[#ea580c] font-bold">Google Map Pack Top 3:</strong> Position your business where 70% of phone calls originate on Google Maps.</div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-5 h-5 rounded-full bg-[#ff7a1a]/10 text-[#ea580c] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
-                    <div><strong className="text-[#101832]">Service Area Landing Pages:</strong> Dedicated pages for every town and community you want to win work in.</div>
+                    <div><strong className="text-[#ea580c] font-bold">Service Area Landing Pages:</strong> Dedicated pages for every town and community you want to win work in.</div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-5 h-5 rounded-full bg-[#ff7a1a]/10 text-[#ea580c] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
-                    <div><strong className="text-[#101832]">High-Intent Inbound Calls:</strong> Genuine homeowners actively looking for work, not low-quality tire-kickers.</div>
+                    <div><strong className="text-[#ea580c] font-bold">High-Intent Inbound Calls:</strong> Genuine homeowners actively looking for work, not low-quality tire-kickers.</div>
                   </li>
                 </ul>
                 <Link
                   href="/local-seo"
-                  className="relative group overflow-hidden bg-gradient-to-r from-[#ff7a1a] to-[#ea580c] text-white font-bold text-sm px-6 py-3 rounded-[10px] border border-white/20 shadow-[0_4px_14px_rgba(255,122,26,0.25),inset_0_1px_0_rgba(255,255,255,0.25)] hover:shadow-[0_6px_20px_rgba(255,122,26,0.4)] transition-all duration-500 ease-out flex items-center gap-2"
+                  className="relative group overflow-hidden bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm px-6 py-3 rounded-[10px] border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out flex items-center gap-2 cursor-pointer"
                 >
                   <span
                     aria-hidden="true"
-                    className="absolute inset-0 bg-gradient-to-r from-[#ea580c] to-[#ff7a1a] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none"
+                    className="absolute inset-0 bg-gradient-to-b from-[#2b2d35] to-[#14151a] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none"
                   />
                   <span className="relative z-10">See Local SEO Blueprint</span>
                 </Link>
@@ -782,7 +783,7 @@ export default function Home() {
               <button
                 type="button"
                 onClick={handlePrevTrade}
-                className="absolute left-1 sm:left-3 md:left-6 z-40 w-11 h-11 sm:w-13 sm:h-13 md:w-14 md:h-14 rounded-full bg-gradient-to-r from-[#ff7a1a] to-[#ea580c] hover:from-[#ea580c] hover:to-[#ff7a1a] text-white flex items-center justify-center flex-shrink-0 shadow-[0_8px_24px_rgba(255,122,26,0.45)] hover:shadow-[0_12px_28px_rgba(255,122,26,0.65)] hover:scale-105 active:scale-95 transition-all cursor-pointer"
+                className="absolute left-1 sm:left-3 md:left-6 z-40 w-11 h-11 sm:w-13 sm:h-13 md:w-14 md:h-14 rounded-full bg-gradient-to-b from-[#1e2026] to-[#0f1013] hover:from-[#2b2d36] hover:to-[#16171c] text-white flex items-center justify-center flex-shrink-0 border border-white/15 shadow-[0_8px_24px_rgba(0,0,0,0.35),inset_0_1px_0_rgba(255,255,255,0.2)] hover:shadow-[0_12px_28px_rgba(0,0,0,0.5)] hover:scale-105 active:scale-95 transition-all cursor-pointer"
                 aria-label="Previous trade"
               >
                 <svg
@@ -800,7 +801,7 @@ export default function Home() {
               <button
                 type="button"
                 onClick={handleNextTrade}
-                className="absolute right-1 sm:right-3 md:right-6 z-40 w-11 h-11 sm:w-13 sm:h-13 md:w-14 md:h-14 rounded-full bg-gradient-to-r from-[#ff7a1a] to-[#ea580c] hover:from-[#ea580c] hover:to-[#ff7a1a] text-white flex items-center justify-center flex-shrink-0 shadow-[0_8px_24px_rgba(255,122,26,0.45)] hover:shadow-[0_12px_28px_rgba(255,122,26,0.65)] hover:scale-105 active:scale-95 transition-all cursor-pointer"
+                className="absolute right-1 sm:right-3 md:right-6 z-40 w-11 h-11 sm:w-13 sm:h-13 md:w-14 md:h-14 rounded-full bg-gradient-to-b from-[#1e2026] to-[#0f1013] hover:from-[#2b2d36] hover:to-[#16171c] text-white flex items-center justify-center flex-shrink-0 border border-white/15 shadow-[0_8px_24px_rgba(0,0,0,0.35),inset_0_1px_0_rgba(255,255,255,0.2)] hover:shadow-[0_12px_28px_rgba(0,0,0,0.5)] hover:scale-105 active:scale-95 transition-all cursor-pointer"
                 aria-label="Next trade"
               >
                 <svg
@@ -985,12 +986,8 @@ export default function Home() {
           <div className="mt-14 sm:mt-16 text-center">
             <Link
               href="/book-a-call"
-              className="relative group overflow-hidden inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#ff7a1a] to-[#ea580c] text-white font-bold text-xs min-[360px]:text-sm px-5 sm:px-8 py-3.5 sm:py-4 rounded-[10px] border border-white/20 shadow-[0_8px_20px_rgba(255,122,26,0.3),inset_0_1px_0_rgba(255,255,255,0.25)] hover:shadow-[0_12px_28px_rgba(255,122,26,0.45)] transition-all duration-500 ease-out whitespace-nowrap"
+              className="relative group overflow-hidden inline-flex items-center justify-center gap-2 bg-[#121316] hover:bg-[#20222a] text-white font-bold text-xs min-[360px]:text-sm px-6 sm:px-8 py-3.5 sm:py-4 rounded-[10px] border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out whitespace-nowrap cursor-pointer"
             >
-              <span
-                aria-hidden="true"
-                className="absolute inset-0 bg-gradient-to-r from-[#ea580c] to-[#ff7a1a] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none"
-              />
               <span className="relative z-10">Schedule Step 1: Your Free Discovery Call</span>
             </Link>
           </div>
@@ -1065,7 +1062,7 @@ export default function Home() {
               <button
                 type="button"
                 onClick={handlePrevProof}
-                className="absolute left-1 sm:left-3 md:left-6 z-40 w-11 h-11 sm:w-13 sm:h-13 md:w-14 md:h-14 rounded-full bg-gradient-to-r from-[#ff7a1a] to-[#ea580c] hover:from-[#ea580c] hover:to-[#ff7a1a] text-white flex items-center justify-center flex-shrink-0 shadow-[0_8px_24px_rgba(255,122,26,0.45)] hover:shadow-[0_12px_28px_rgba(255,122,26,0.65)] hover:scale-105 active:scale-95 transition-all cursor-pointer"
+                className="absolute left-1 sm:left-3 md:left-6 z-40 w-11 h-11 sm:w-13 sm:h-13 md:w-14 md:h-14 rounded-full bg-[#121316] hover:bg-[#20222a] text-white flex items-center justify-center flex-shrink-0 border border-white/12 hover:border-white/30 shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.15)] hover:scale-105 active:scale-95 transition-all cursor-pointer"
                 aria-label="Previous screenshot"
               >
                 <svg
@@ -1083,7 +1080,7 @@ export default function Home() {
               <button
                 type="button"
                 onClick={handleNextProof}
-                className="absolute right-1 sm:right-3 md:right-6 z-40 w-11 h-11 sm:w-13 sm:h-13 md:w-14 md:h-14 rounded-full bg-gradient-to-r from-[#ff7a1a] to-[#ea580c] hover:from-[#ea580c] hover:to-[#ff7a1a] text-white flex items-center justify-center flex-shrink-0 shadow-[0_8px_24px_rgba(255,122,26,0.45)] hover:shadow-[0_12px_28px_rgba(255,122,26,0.65)] hover:scale-105 active:scale-95 transition-all cursor-pointer"
+                className="absolute right-1 sm:right-3 md:right-6 z-40 w-11 h-11 sm:w-13 sm:h-13 md:w-14 md:h-14 rounded-full bg-[#121316] hover:bg-[#20222a] text-white flex items-center justify-center flex-shrink-0 border border-white/12 hover:border-white/30 shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.15)] hover:scale-105 active:scale-95 transition-all cursor-pointer"
                 aria-label="Next screenshot"
               >
                 <svg
@@ -1334,11 +1331,11 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto max-w-md sm:max-w-none">
             <Link
               href="/book-a-call"
-              className="relative group overflow-hidden w-full sm:w-auto bg-gradient-to-r from-[#ff7a1a] to-[#ea580c] text-white font-bold text-xs min-[360px]:text-[13px] sm:text-base px-4 min-[360px]:px-5 sm:px-8 py-3.5 sm:py-3.5 rounded-[10px] border border-white/20 shadow-[0_4px_14px_rgba(255,122,26,0.25),inset_0_1px_0_rgba(255,255,255,0.2)] hover:shadow-[0_6px_18px_rgba(255,122,26,0.35)] transition-all duration-500 ease-out flex items-center justify-center gap-2 whitespace-nowrap"
+              className="relative group overflow-hidden w-full sm:w-auto bg-[#121316] hover:bg-[#20222a] text-white font-bold text-xs min-[360px]:text-[13px] sm:text-base px-6 min-[360px]:px-7 sm:px-9 py-3.5 sm:py-4 rounded-[10px] border border-white/12 hover:border-white/30 shadow-[0_2px_8px_rgba(0,0,0,0.18),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_14px_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer"
             >
               <span
                 aria-hidden="true"
-                className="absolute inset-0 bg-gradient-to-r from-[#ea580c] to-[#ff7a1a] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none"
+                className="absolute inset-0 bg-gradient-to-b from-[#2b2d35] to-[#14151a] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none"
               />
               <span className="relative z-10">Book Your Free Growth Strategy Call</span>
             </Link>
@@ -1353,6 +1350,9 @@ export default function Home() {
         </div>
       </section>
 
+        </div>
+      </main>
+      <FooterHome />
     </div>
   );
 }

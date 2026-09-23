@@ -105,7 +105,7 @@ export default function FloatingScrollbar() {
     >
       <div
         onMouseDown={handleMouseDown}
-        className="pointer-events-auto w-[6px] bg-[#7c35ed] hover:bg-[#6d28d9] active:bg-[#5b21b6] rounded-full shadow-[0_1px_4px_rgba(124,53,237,0.45)] cursor-pointer transition-[width,background-color] hover:w-[8px]"
+        className="pointer-events-auto w-[6px] bg-[#ff7a1a] hover:bg-[#ea580c] active:bg-[#c2410c] rounded-full shadow-[0_1px_4px_rgba(255,122,26,0.45)] cursor-pointer transition-[width,background-color] hover:w-[8px]"
         style={{
           position: "absolute",
           top: `${thumbTop}px`,
