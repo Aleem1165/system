@@ -42,7 +42,7 @@ export default function AutomatedFollowUpPage() {
         "Stops homeowners from continuing their search on Google",
       ],
       icon: (
-        <svg className="w-6 h-6 text-[#7c35ed]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-[#ea580c]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
@@ -57,7 +57,7 @@ export default function AutomatedFollowUpPage() {
         "Answers common timeline and availability expectations",
       ],
       icon: (
-        <svg className="w-6 h-6 text-[#7c35ed]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-[#ea580c]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -76,7 +76,7 @@ export default function AutomatedFollowUpPage() {
         "Frees your team to focus on estimating and high-margin craft",
       ],
       icon: (
-        <svg className="w-6 h-6 text-[#7c35ed]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-[#ea580c]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -95,7 +95,7 @@ export default function AutomatedFollowUpPage() {
         "Builds lasting trust with polite confirmation & reminder texts",
       ],
       icon: (
-        <svg className="w-6 h-6 text-[#7c35ed]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-[#ea580c]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -138,30 +138,30 @@ export default function AutomatedFollowUpPage() {
       {/* ========================================================================= */}
       {/* 1. HERO / INTERACTIVE DEMO SECTION */}
       {/* ========================================================================= */}
-      <section className="pt-28 sm:pt-36 pb-16 sm:pb-24 relative overflow-hidden bg-gradient-to-b from-[#faf8fd] via-white to-white">
+      <section className="pt-28 sm:pt-36 pb-10 sm:pb-14 relative overflow-hidden bg-gradient-to-b from-[#fff8f2] via-white to-white">
         {/* Ambient Top Glow Orbs */}
-        <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gradient-to-tr from-[#7c35ed]/10 to-[#c084fc]/15 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gradient-to-tr from-[#ff7a1a]/10 to-[#ffaa47]/15 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-12 relative z-10">
           {/* Breadcrumb & Kicker */}
-          <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm font-semibold text-[#566073] mb-6">
-            <Link href="/" className="hover:text-[#7c35ed] transition-colors">
+          {/* <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm font-semibold text-[#566073] mb-6">
+            <Link href="/" className="hover:text-[#ea580c] transition-colors">
               Home
             </Link>
             <span>/</span>
-            <Link href="/#system" className="hover:text-[#7c35ed] transition-colors">
+            <Link href="/#system" className="hover:text-[#ea580c] transition-colors">
               Solutions
             </Link>
             <span>/</span>
-            <span className="text-[#7c35ed] font-bold">Automated Follow-Up</span>
-          </div>
+            <span className="text-[#ea580c] font-bold">Automated Follow-Up</span>
+          </div> */}
 
           {/* Section Header */}
           <div className="max-w-4xl mb-12 sm:mb-16">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f5f3ff] text-[#7c35ed] text-xs font-bold uppercase tracking-wider mb-4 border border-[#7c35ed]/15">
-              <span className="w-2 h-2 rounded-full bg-[#7c35ed] animate-pulse" />
+            {/* <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#fff7ed] text-[#ea580c] text-xs font-bold uppercase tracking-wider mb-4 border border-[#ff7a1a]/15">
+              <span className="w-2 h-2 rounded-full bg-[#ff7a1a] animate-pulse" />
               Pipeline Automation
-            </div>
+            </div> */}
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#101832] leading-[1.12] mb-6">
               Hands-Free Follow-Up Sequences Built to Close More Contractor Jobs
             </h1>
@@ -177,20 +177,20 @@ export default function AutomatedFollowUpPage() {
               {stats.map((s, idx) => (
                 <article
                   key={idx}
-                  className="relative bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-5 border border-gray-200/80 shadow-[0_4px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_28px_rgba(124,58,237,0.1)] hover:border-[#7c35ed]/30 transition-all duration-300 group overflow-hidden flex-1 flex flex-col justify-center"
+                  className="relative bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 border border-gray-200/80 shadow-[0_4px_16px_rgba(0,0,0,0.03)]  overflow-hidden flex-1 flex flex-col justify-center"
                 >
-                  <div className="absolute top-0 left-0 bottom-0 w-1.5 bg-gradient-to-b from-[#7c35ed] to-[#9333ea]" />
+                  <div className="absolute top-0 left-0 bottom-0 w-1.5 bg-gradient-to-b from-[#ff7a1a] to-[#ea580c]" />
                   <div className="flex items-center justify-between mb-1.5 sm:mb-2">
-                    <span className="text-2xl sm:text-3xl font-extrabold bg-gradient-to-r from-[#7c35ed] via-[#9333ea] to-[#a855f7] bg-clip-text text-transparent">
+                    <span className="text-2xl sm:text-3xl font-extrabold bg-gradient-to-r from-[#ffae19] via-[#ff6818] to-[#d92323] bg-clip-text text-transparent">
                       {s.num}
                     </span>
-                    <span className="text-[11px] sm:text-xs font-bold text-[#7c35ed] bg-[#f5f3ff] px-2.5 py-0.5 rounded-full border border-[#7c35ed]/15">
+                    <span className="text-[11px] sm:text-xs font-bold text-[#ea580c] bg-[#fff7ed] px-2.5 py-0.5 rounded-full border border-[#ff7a1a]/15">
                       {s.badge}
                     </span>
                   </div>
-                  <h3 className="text-sm sm:text-base font-bold text-[#101832] mb-1 group-hover:text-[#7c35ed] transition-colors">
+                  {/* <h3 className="text-sm sm:text-base font-bold text-[#101832] mb-1 group-hover:text-[#ea580c] transition-colors">
                     {s.highlight}
-                  </h3>
+                  </h3> */}
                   <p className="text-xs sm:text-[13px] text-[#566073] leading-relaxed">
                     {s.desc}
                   </p>
@@ -209,12 +209,12 @@ export default function AutomatedFollowUpPage() {
       {/* ========================================================================= */}
       {/* 2. EXPLANATION SECTION: WHAT IS AUTOMATED FOLLOW-UP? (4 PILLARS) */}
       {/* ========================================================================= */}
-      <section className="py-20 sm:py-28 bg-[#faf8fd] border-t border-gray-200/70">
+      <section className="pt-12 sm:pt-16 pb-16 sm:pb-24 bg-[#fffbf7] border-t border-gray-200/70">
         <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-12">
           <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
-            <span className="text-[#7c35ed] text-xs sm:text-sm font-extrabold uppercase tracking-widest block mb-3">
+            {/* <span className="text-[#ea580c] text-xs sm:text-sm font-extrabold uppercase tracking-widest block mb-3">
               The Conversion Edge
-            </span>
+            </span> */}
             <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-[#101832] leading-tight mb-5">
               What is an automated contractor follow-up system?
             </h2>
@@ -228,19 +228,19 @@ export default function AutomatedFollowUpPage() {
             {pillars.map((item) => (
               <article
                 key={item.num}
-                className="relative bg-white rounded-3xl p-8 sm:p-9 border border-gray-200/80 shadow-md hover:shadow-xl hover:border-[#7c35ed]/40 transition-all duration-300 hover:-translate-y-1 group flex flex-col justify-between"
+                className="relative bg-white rounded-xl sm:rounded-2xl p-8 sm:p-9 border border-gray-200/80 shadow-md flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-6">
-                    <div className="w-12 h-12 rounded-2xl bg-[#f5f3ff] border border-[#7c35ed]/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:bg-[#7c35ed] group-hover:text-white transition-all duration-300">
+                    <div className="w-12 h-12 rounded-2xl bg-[#fff7ed] border border-[#ff7a1a]/20 flex items-center justify-center flex-shrink-0">
                       {item.icon}
                     </div>
-                    <span className="text-sm font-black text-gray-300 group-hover:text-[#7c35ed] transition-colors">
+                    <span className="text-sm font-black text-gray-300">
                       {item.num}
                     </span>
                   </div>
 
-                  <h3 className="text-xl sm:text-2xl font-bold text-[#101832] mb-3 group-hover:text-[#7c35ed] transition-colors">
+                  <h3 className="text-xl sm:text-2xl font-bold text-[#101832] mb-3">
                     {item.title}
                   </h3>
 
@@ -252,7 +252,7 @@ export default function AutomatedFollowUpPage() {
                 <ul className="pt-6 border-t border-gray-100 flex flex-col gap-2.5">
                   {item.points.map((pt, pIdx) => (
                     <li key={pIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-[#101832]">
-                      <span className="text-[#7c35ed] font-bold">✓</span>
+                      <span className="text-[#ea580c] font-bold">✓</span>
                       <span>{pt}</span>
                     </li>
                   ))}
@@ -266,12 +266,12 @@ export default function AutomatedFollowUpPage() {
       {/* ========================================================================= */}
       {/* 3. SYSTEM HIGHLIGHTS / EVERYTHING INCLUDED */}
       {/* ========================================================================= */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-12">
           <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
-            <span className="text-[#7c35ed] text-xs sm:text-sm font-extrabold uppercase tracking-widest block mb-3">
+            {/* <span className="text-[#ea580c] text-xs sm:text-sm font-extrabold uppercase tracking-widest block mb-3">
               Standard Across Every Build
-            </span>
+            </span> */}
             <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-[#101832] leading-tight mb-5">
               Built specifically for modern contractor workflows
             </h2>
@@ -284,9 +284,9 @@ export default function AutomatedFollowUpPage() {
             {features.map((feat, fIdx) => (
               <div
                 key={fIdx}
-                className="bg-[#faf8fd] rounded-2xl p-7 border border-purple-100 hover:border-[#7c35ed]/30 hover:bg-white hover:shadow-lg transition-all duration-300"
+                className="bg-[#fffbf7] rounded-xl sm:rounded-2xl p-7 border border-orange-100"
               >
-                <div className="w-9 h-9 rounded-xl bg-white border border-[#7c35ed]/20 text-[#7c35ed] font-bold text-sm flex items-center justify-center mb-4 shadow-xs">
+                <div className="w-9 h-9 rounded-xl bg-white border border-[#ff7a1a]/20 text-[#ea580c] font-bold text-sm flex items-center justify-center mb-4 shadow-xs">
                   {fIdx + 1}
                 </div>
                 <h3 className="text-lg font-bold text-[#101832] mb-2">
@@ -304,15 +304,15 @@ export default function AutomatedFollowUpPage() {
       {/* ========================================================================= */}
       {/* 4. FINAL HIGH-CONVERTING CTA CARD */}
       {/* ========================================================================= */}
-      <section className="py-12 sm:py-16 bg-[#faf8fd]">
+      <section className="py-12 sm:py-16 bg-[#fffbf7]">
         <div className="max-w-4xl mx-auto px-6 sm:px-10">
           <div className="relative rounded-3xl p-6 sm:p-8 lg:p-10 bg-gradient-to-br from-[#101832] via-[#1b2240] to-[#25183f] text-white shadow-xl overflow-hidden text-center">
             {/* Ambient Purple Glow Orbs */}
-            <div className="absolute -top-24 -right-24 w-80 h-80 bg-[#7c35ed]/20 rounded-full blur-3xl pointer-events-none" />
-            <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-[#9333ea]/15 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -top-24 -right-24 w-80 h-80 bg-[#ff7a1a]/20 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-[#ea580c]/15 rounded-full blur-3xl pointer-events-none" />
 
             <div className="relative z-10 max-w-2xl mx-auto">
-              <span className="text-[#c084fc] text-xs sm:text-sm font-semibold uppercase tracking-widest block mb-2">
+              <span className="text-[#ff9838] text-xs sm:text-sm font-semibold uppercase tracking-widest block mb-2">
                 Stop Leaving Money On Job Sites
               </span>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white leading-tight mb-3">
@@ -325,14 +325,13 @@ export default function AutomatedFollowUpPage() {
               <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
                 <Link
                   href="/book-a-call"
-                  className="bg-gradient-to-r from-[#7c35ed] to-[#9333ea] hover:from-[#6d28d9] hover:to-[#7c35ed] text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-full shadow-[0_10px_24px_rgba(124,58,237,0.4)] hover:shadow-[0_14px_30px_rgba(124,58,237,0.6)] hover:scale-105 active:scale-95 transition-all text-center flex items-center justify-center gap-2 group cursor-pointer"
+                  className="bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-[10px] border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out text-center flex items-center justify-center gap-2 group cursor-pointer"
                 >
                   <span>Book a Free Strategy Call</span>
-                  <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </Link>
                 <Link
                   href="/"
-                  className="bg-white/10 hover:bg-white/15 text-white font-semibold text-sm sm:text-base px-6 py-3.5 rounded-full border border-white/15 backdrop-blur-sm transition-all text-center cursor-pointer"
+                  className="bg-white/10 hover:bg-white/15 text-white font-semibold text-sm sm:text-base px-6 py-3.5 rounded-[10px] border border-white/15 backdrop-blur-sm transition-all text-center cursor-pointer"
                 >
                   Back to Home
                 </Link>

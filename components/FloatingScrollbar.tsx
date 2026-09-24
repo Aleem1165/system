@@ -96,16 +96,16 @@ export default function FloatingScrollbar() {
   return (
     <div
       aria-hidden="true"
-      className="fixed right-0 top-0 bottom-0 z-[99999] pointer-events-none w-3 transition-opacity duration-300 select-none"
+      className="fixed right-0 top-0 bottom-0 z-[99999] pointer-events-none w-2 sm:w-3 transition-opacity duration-300 select-none"
       style={{
-        opacity: isVisible || isHovered || isDragging ? 1 : 0.4,
+        opacity: isVisible || isHovered || isDragging ? 0.9 : 0.3,
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div
         onMouseDown={handleMouseDown}
-        className="pointer-events-auto w-[6px] bg-[#ff7a1a] hover:bg-[#ea580c] active:bg-[#c2410c] rounded-full shadow-[0_1px_4px_rgba(255,122,26,0.45)] cursor-pointer transition-[width,background-color] hover:w-[8px]"
+        className="pointer-events-auto w-[3px] sm:w-[5px] hover:sm:w-[7px] bg-[#121316]/85 hover:bg-[#121316] active:bg-black rounded-full shadow-[0_1px_3px_rgba(0,0,0,0.25)] transition-[width,background-color]"
         style={{
           position: "absolute",
           top: `${thumbTop}px`,

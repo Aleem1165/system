@@ -20,7 +20,7 @@ export default function VideoAnimationPage() {
         "Builds immediate homeowner confidence in your technical expertise",
       ],
       icon: (
-        <svg className="w-6 h-6 text-[#7c35ed]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-[#ea580c]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -39,7 +39,7 @@ export default function VideoAnimationPage() {
         "Your crew stays on billable jobs instead of playing actor for a day",
       ],
       icon: (
-        <svg className="w-6 h-6 text-[#7c35ed]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-[#ea580c]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -58,7 +58,7 @@ export default function VideoAnimationPage() {
         "Re-engages stalled quote recipients in automated SMS follow-up sequences",
       ],
       icon: (
-        <svg className="w-6 h-6 text-[#7c35ed]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-[#ea580c]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -77,7 +77,7 @@ export default function VideoAnimationPage() {
         "Direct CTA prompt guiding viewers to book a call or estimate",
       ],
       icon: (
-        <svg className="w-6 h-6 text-[#7c35ed]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-[#ea580c]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -107,39 +107,41 @@ export default function VideoAnimationPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-[#101832] font-sans selection:bg-[#7c35ed] selection:text-white">
+    <div className="min-h-screen bg-white text-[#101832] font-sans selection:bg-[#ff7a1a] selection:text-white">
       {/* ========================================================================= */}
       {/* 1. HERO SECTION (Asymmetric Split with Animated Explainer Mockup)          */}
       {/* ========================================================================= */}
-      <section className="relative pt-32 sm:pt-40 pb-20 sm:pb-28 overflow-hidden bg-gradient-to-b from-[#faf8fd] via-white to-white border-b border-gray-100">
+      <section className="relative pt-32 sm:pt-40 pb-10 sm:pb-14 overflow-hidden bg-gradient-to-b from-[#fff8f2] via-white to-white border-b border-gray-100">
         {/* Ambient Glow */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-gradient-to-tr from-purple-200/40 via-violet-100/40 to-transparent rounded-full blur-3xl pointer-events-none -z-10" />
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-gradient-to-tr from-orange-200/35 via-amber-100/35 to-transparent rounded-full blur-3xl pointer-events-none -z-10" />
 
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
             {/* Left Column: Copy & Value Proposition */}
             <div className="lg:col-span-6 flex flex-col items-start">
               {/* Badges */}
+              {/* 
               <div className="flex flex-wrap items-center gap-2.5 mb-6">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f5f3ff] border border-[#ede9fe] text-[#7c35ed] text-xs font-bold uppercase tracking-wider">
-                  <span className="w-2 h-2 rounded-full bg-[#7c35ed] animate-pulse" />
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#fff7ed] border border-[#ffedd5] text-[#ea580c] text-xs font-bold uppercase tracking-wider">
+                  <span className="w-2 h-2 rounded-full bg-[#ff7a1a] animate-pulse" />
                   Other Services
                 </div>
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-50 text-purple-700 text-xs font-semibold border border-purple-200">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-50 text-orange-700 text-xs font-semibold border border-orange-200">
                   <span>🎬</span>
                   <span>Custom Motion Graphics</span>
                 </div>
               </div>
+              */}
 
               {/* Eyebrow */}
-              <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#7c35ed] mb-3">
+              <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#ea580c] mb-3">
                 Clarity Drives Higher Estimates
               </span>
 
               {/* Headline */}
               <h1 className="text-3xl sm:text-5xl lg:text-[2.9rem] font-extrabold tracking-tight text-[#101832] leading-[1.12] mb-6">
                 Explain Your Complex Services In{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7c35ed] via-[#9333ea] to-[#a855f7]">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ffae19] via-[#ff6818] to-[#d92323]">
                   45 Seconds Flat.
                 </span>
               </h1>
@@ -152,7 +154,7 @@ export default function VideoAnimationPage() {
               {/* Key Trust Metrics */}
               <div className="grid grid-cols-3 gap-3 sm:gap-4 w-full max-w-lg mb-8">
                 <div className="p-3.5 sm:p-4 rounded-xl bg-white border border-gray-200 shadow-sm text-center">
-                  <div className="text-xl sm:text-2xl font-black text-[#7c35ed]">+140%</div>
+                  <div className="text-xl sm:text-2xl font-black text-[#ea580c]">+140%</div>
                   <div className="text-[11px] sm:text-xs text-[#566073] font-medium mt-0.5">Page Conversion</div>
                 </div>
                 <div className="p-3.5 sm:p-4 rounded-xl bg-white border border-gray-200 shadow-sm text-center">
@@ -169,14 +171,14 @@ export default function VideoAnimationPage() {
               <div className="flex flex-wrap items-center gap-4 w-full sm:w-auto">
                 <Link
                   href="/book-a-call"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#7c35ed] hover:bg-[#6d28d9] text-white font-bold text-sm shadow-[0_8px_20px_rgba(124,58,237,0.28)] hover:shadow-[0_12px_24px_rgba(124,58,237,0.36)] transition-all transform hover:-translate-y-0.5"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-[10px] bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out cursor-pointer"
                 >
                   <span>Get Your Video Strategy</span>
                   <span className="text-base font-bold">→</span>
                 </Link>
                 <Link
                   href="/"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-white hover:bg-gray-50 text-[#101832] font-bold text-sm border border-gray-200 shadow-sm hover:border-gray-300 transition-all"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-[10px] bg-white hover:bg-gray-50 text-[#101832] font-bold text-sm border border-gray-200 shadow-sm hover:border-gray-300 transition-all cursor-pointer"
                 >
                   <span>Explore Full System</span>
                 </Link>
@@ -194,7 +196,7 @@ export default function VideoAnimationPage() {
                       Contractor Explainer Suite
                     </span>
                   </div>
-                  <span className="px-2.5 py-0.5 rounded-full bg-purple-500/20 text-purple-300 text-[11px] font-mono border border-purple-500/30">
+                  <span className="px-2.5 py-0.5 rounded-full bg-orange-500/20 text-orange-300 text-[11px] font-mono border border-orange-500/30">
                     HD 60fps • 45s
                   </span>
                 </div>
@@ -202,21 +204,21 @@ export default function VideoAnimationPage() {
                 {/* 16:9 Video Animation Player Frame */}
                 <div className="relative aspect-video rounded-xl overflow-hidden bg-gradient-to-br from-[#1c1a3a] via-[#151728] to-[#0b0c16] border border-white/10 flex flex-col justify-between p-4 mb-4 group shadow-inner">
                   {/* Decorative Radial Backdrop Glow */}
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,rgba(124,58,237,0.25),transparent_65%)] pointer-events-none" />
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,rgba(255,122,26,0.25),transparent_65%)] pointer-events-none" />
 
                   {/* Top Bar inside Player */}
                   <div className="relative z-10 flex items-center justify-between">
                     <span className="px-2 py-0.5 rounded bg-black/60 backdrop-blur-md text-[10px] font-semibold text-gray-200 border border-white/10">
                       Trenchless Sewer Relining vs Digging
                     </span>
-                    <span className="px-2 py-0.5 rounded bg-purple-600/80 text-[10px] font-bold text-white uppercase tracking-wider">
+                    <span className="px-2 py-0.5 rounded bg-orange-600/80 text-[10px] font-bold text-white uppercase tracking-wider">
                       Preview
                     </span>
                   </div>
 
                   {/* Centered Play Button & Graphic Illustration */}
                   <div className="relative z-10 flex flex-col items-center justify-center my-auto">
-                    <div className="w-14 h-14 rounded-full bg-gradient-to-tr from-[#7c35ed] to-[#9333ea] flex items-center justify-center shadow-[0_0_24px_rgba(124,58,237,0.6)] group-hover:scale-110 transition-transform">
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-tr from-[#ff7a1a] to-[#ea580c] flex items-center justify-center shadow-[0_0_24px_rgba(255,122,26,0.6)] group-hover:scale-110 transition-transform">
                       <svg className="w-6 h-6 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M8 5v14l11-7z" />
                       </svg>
@@ -229,11 +231,11 @@ export default function VideoAnimationPage() {
                   {/* Player Timeline Bar */}
                   <div className="relative z-10 w-full">
                     <div className="flex items-center justify-between text-[10px] font-mono text-gray-400 mb-1">
-                      <span className="text-purple-300 font-semibold">0:24</span>
+                      <span className="text-orange-300 font-semibold">0:24</span>
                       <span>0:45</span>
                     </div>
                     <div className="w-full h-1.5 bg-white/20 rounded-full overflow-hidden">
-                      <div className="h-full bg-gradient-to-r from-[#7c35ed] to-[#a855f7] w-[53%] rounded-full"></div>
+                      <div className="h-full bg-gradient-to-r from-[#7c35ed] to-[#ffae19] w-[53%] rounded-full"></div>
                     </div>
                   </div>
                 </div>
@@ -246,13 +248,13 @@ export default function VideoAnimationPage() {
                   <div className="grid grid-cols-3 gap-2">
                     {/* Scene 1 */}
                     <div className="p-2.5 rounded-lg bg-white/[0.05] border border-white/10">
-                      <div className="text-[10px] font-mono text-purple-400 font-bold mb-0.5">01 • THE PAIN</div>
+                      <div className="text-[10px] font-mono text-orange-400 font-bold mb-0.5">01 • THE PAIN</div>
                       <div className="text-xs font-semibold text-white leading-tight">Root Intrusion</div>
                       <div className="text-[10px] text-gray-400 mt-1">Cracked pipe beneath lawn</div>
                     </div>
                     {/* Scene 2 */}
-                    <div className="p-2.5 rounded-lg bg-purple-900/30 border border-purple-500/30">
-                      <div className="text-[10px] font-mono text-purple-300 font-bold mb-0.5">02 • THE FIX</div>
+                    <div className="p-2.5 rounded-lg bg-orange-950/30 border border-orange-500/30">
+                      <div className="text-[10px] font-mono text-orange-300 font-bold mb-0.5">02 • THE FIX</div>
                       <div className="text-xs font-semibold text-white leading-tight">Epoxy Lining</div>
                       <div className="text-[10px] text-gray-300 mt-1">Zero digging, 50-yr seal</div>
                     </div>
@@ -266,14 +268,14 @@ export default function VideoAnimationPage() {
                 </div>
 
                 {/* Footer Multi-Channel Deployment Tag */}
-                <div className="p-3 rounded-xl bg-purple-950/40 border border-purple-500/30 flex items-center justify-between text-xs">
-                  <div className="flex items-center gap-2 text-purple-300">
+                <div className="p-3 rounded-xl bg-orange-950/40 border border-orange-500/30 flex items-center justify-between text-xs">
+                  <div className="flex items-center gap-2 text-orange-300">
                     <span className="text-sm">✓</span>
                     <div>
                       <span className="font-bold text-white">Multi-Channel Asset</span>: Website, Ads &amp; Quote Texts
                     </div>
                   </div>
-                  <span className="text-[10px] font-mono text-purple-400 font-bold uppercase">Ready</span>
+                  <span className="text-[10px] font-mono text-orange-400 font-bold uppercase">Ready</span>
                 </div>
               </div>
             </div>
@@ -284,12 +286,12 @@ export default function VideoAnimationPage() {
       {/* ========================================================================= */}
       {/* 2. CORE CAPABILITIES (4 Pillars)                                          */}
       {/* ========================================================================= */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="pt-12 sm:pt-16 pb-16 sm:pb-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#7c35ed] mb-3 block">
+            {/* <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#ea580c] mb-3 block">
               Engineered For High-Ticket Trades
-            </span>
+            </span> */}
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#101832] tracking-tight">
               Turn Technical Trade Scopes Into Instant Homeowner Trust
             </h2>
@@ -302,19 +304,19 @@ export default function VideoAnimationPage() {
             {capabilities.map((cap) => (
               <div
                 key={cap.num}
-                className="p-8 sm:p-10 rounded-2xl bg-white border border-gray-200 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all duration-300 group relative flex flex-col justify-between"
+                className="p-8 sm:p-10 rounded-xl sm:rounded-2xl bg-white border border-gray-200 shadow-sm relative flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-6">
-                    <div className="w-12 h-12 rounded-xl bg-[#f5f3ff] flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 rounded-xl bg-[#fff7ed] flex items-center justify-center">
                       {cap.icon}
                     </div>
-                    <span className="text-2xl font-black text-gray-200 group-hover:text-[#7c35ed]/30 transition-colors font-mono">
+                    <span className="text-2xl font-black text-gray-200 font-mono">
                       {cap.num}
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold text-[#101832] mb-3 group-hover:text-[#7c35ed] transition-colors">
+                  <h3 className="text-xl font-bold text-[#101832] mb-3">
                     {cap.title}
                   </h3>
 
@@ -344,12 +346,12 @@ export default function VideoAnimationPage() {
       {/* ========================================================================= */}
       {/* 3. STRATEGIC VALUE IMPACT (3 Core Pillars)                                 */}
       {/* ========================================================================= */}
-      <section className="py-20 sm:py-28 bg-[#faf8fd] border-y border-purple-50">
+      <section className="py-20 sm:py-28 bg-[#fffbf7] border-y border-orange-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#7c35ed] mb-3 block">
+            {/* <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#ea580c] mb-3 block">
               Why Animation Wins Deals
-            </span>
+            </span> */}
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#101832] tracking-tight">
               The Power of Visual Proof in Trade Contracting
             </h2>
@@ -362,10 +364,10 @@ export default function VideoAnimationPage() {
             {valuePillars.map((pillar, i) => (
               <div
                 key={i}
-                className="p-8 rounded-2xl bg-white border border-gray-200 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between"
+                className="p-8 rounded-xl sm:rounded-2xl bg-white border border-gray-200 shadow-sm flex flex-col justify-between"
               >
                 <div>
-                  <span className="inline-block px-3 py-1 rounded-full bg-[#f5f3ff] text-[#7c35ed] text-xs font-bold uppercase tracking-wider mb-4 border border-[#ede9fe]">
+                  <span className="inline-block px-3 py-1 rounded-full bg-[#fff7ed] text-[#ea580c] text-xs font-bold uppercase tracking-wider mb-4 border border-[#ffedd5]">
                     {pillar.badge}
                   </span>
                   <h3 className="text-xl font-extrabold text-[#101832] mb-3">
@@ -375,7 +377,7 @@ export default function VideoAnimationPage() {
                     {pillar.desc}
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-gray-100 flex items-center text-xs font-bold text-[#7c35ed]">
+                <div className="mt-6 pt-4 border-t border-gray-100 flex items-center text-xs font-bold text-[#ea580c]">
                   <span>Built for trade conversion</span>
                   <span className="ml-1">→</span>
                 </div>
@@ -392,11 +394,11 @@ export default function VideoAnimationPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#101832] via-[#1a1c3d] to-[#2b1754] text-white p-10 sm:p-16 text-center shadow-2xl">
             {/* Ambient Background Glows */}
-            <div className="absolute -top-24 -left-24 w-80 h-80 bg-[#7c35ed]/30 rounded-full blur-3xl pointer-events-none" />
-            <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -top-24 -left-24 w-80 h-80 bg-[#ff7a1a]/30 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-orange-500/20 rounded-full blur-3xl pointer-events-none" />
 
             <div className="relative z-10 max-w-3xl mx-auto">
-              <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-purple-300 text-xs font-bold uppercase tracking-wider mb-6 border border-white/15">
+              <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-orange-300 text-xs font-bold uppercase tracking-wider mb-6 border border-white/15">
                 Elevate Your Estimating Process
               </span>
               <h2 className="text-3xl sm:text-5xl font-black tracking-tight mb-6 leading-tight">
@@ -408,14 +410,13 @@ export default function VideoAnimationPage() {
               <div className="flex flex-wrap items-center justify-center gap-4">
                 <Link
                   href="/book-a-call"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-9 py-4 rounded-full bg-[#7c35ed] hover:bg-[#6d28d9] text-white font-bold text-sm shadow-[0_8px_20px_rgba(124,58,237,0.35)] transition-all transform hover:-translate-y-0.5"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-9 py-4 rounded-[10px] bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out cursor-pointer"
                 >
                   <span>Schedule Your Animation Strategy Call</span>
-                  <span className="text-base">→</span>
                 </Link>
                 <a
                   href="tel:8888100013"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 hover:bg-white/15 text-white font-bold text-sm border border-white/20 transition-all"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-[10px] bg-white/10 hover:bg-white/15 text-white font-bold text-sm border border-white/20 transition-all cursor-pointer"
                 >
                   <span>Call Us: (888) 810-0013</span>
                 </a>

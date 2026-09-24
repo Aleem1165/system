@@ -1,23 +1,18 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Inter, Outfit } from "next/font/google";
+import { Plus_Jakarta_Sans, Outfit } from "next/font/google";
 import "./globals.css";
-import LayoutShell from "@/components/LayoutShell";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import FloatingScrollbar from "@/components/FloatingScrollbar";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
-  variable: "--font-heading",
+  variable: "--font-sans",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
 });
 
-const inter = Inter({
-  variable: "--font-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
 const outfit = Outfit({
-  variable: "--font-outfit",
+  variable: "--font-heading",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
 });
@@ -36,11 +31,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${plusJakartaSans.variable} ${inter.variable} ${outfit.variable} h-full antialiased`}
+      className={`${plusJakartaSans.variable} ${outfit.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#fdfdfd] text-[#101832]">
         <FloatingScrollbar />
-        <LayoutShell>{children}</LayoutShell>
+        <Header />
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );

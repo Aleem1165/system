@@ -20,7 +20,7 @@ export default function GoogleAdsPage() {
         "Converts emergencies into immediate paid service calls",
       ],
       icon: (
-        <svg className="w-6 h-6 text-[#7c35ed]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-[#ea580c]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -39,7 +39,7 @@ export default function GoogleAdsPage() {
         "Strategic bidding adjusted for maximum return on ad spend",
       ],
       icon: (
-        <svg className="w-6 h-6 text-[#7c35ed]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-[#ea580c]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
@@ -54,7 +54,7 @@ export default function GoogleAdsPage() {
         "Protects every dollar of your monthly marketing budget",
       ],
       icon: (
-        <svg className="w-6 h-6 text-[#7c35ed]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-[#ea580c]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -73,7 +73,7 @@ export default function GoogleAdsPage() {
         "Direct calculation of customer acquisition cost and ROI",
       ],
       icon: (
-        <svg className="w-6 h-6 text-[#7c35ed]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-[#ea580c]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -107,30 +107,30 @@ export default function GoogleAdsPage() {
       {/* ========================================================================= */}
       {/* 1. HERO SECTION: OTHER SERVICES SIGNATURE SPLIT LAYOUT */}
       {/* ========================================================================= */}
-      <section className="pt-28 sm:pt-36 pb-16 sm:pb-24 relative overflow-hidden bg-gradient-to-b from-[#faf8fd] via-white to-white">
+      <section className="pt-28 sm:pt-36 pb-10 sm:pb-14 relative overflow-hidden bg-gradient-to-b from-[#fff8f2] via-white to-white">
         {/* Ambient Top Glow Orbs */}
-        <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gradient-to-tr from-[#7c35ed]/10 to-[#c084fc]/15 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gradient-to-tr from-[#ff7a1a]/10 to-[#ffaa47]/15 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-12 relative z-10">
           {/* Breadcrumb */}
-          <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm font-semibold text-[#566073] mb-6">
-            <Link href="/" className="hover:text-[#7c35ed] transition-colors">
+          {/* <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm font-semibold text-[#566073] mb-6">
+            <Link href="/" className="hover:text-[#ea580c] transition-colors">
               Home
             </Link>
             <span>/</span>
             <span className="text-[#566073]">Other Services</span>
             <span>/</span>
-            <span className="text-[#7c35ed] font-bold">Google Ads</span>
-          </div>
+            <span className="text-[#ea580c] font-bold">Google Ads</span>
+          </div> */}
 
           {/* Split Hero Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Column: Copy & Actions */}
             <div className="lg:col-span-6 flex flex-col items-start">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f5f3ff] text-[#7c35ed] text-xs font-bold uppercase tracking-wider mb-4 border border-[#7c35ed]/15">
-                <span className="w-2 h-2 rounded-full bg-[#7c35ed] animate-pulse" />
+              {/* <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#fff7ed] text-[#ea580c] text-xs font-bold uppercase tracking-wider mb-4 border border-[#ff7a1a]/15">
+                <span className="w-2 h-2 rounded-full bg-[#ff7a1a] animate-pulse" />
                 High-Intent Search
-              </div>
+              </div> */}
 
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#101832] leading-[1.12] mb-6">
                 Show Up at the Exact Second Homeowners Need the Job Done.
@@ -143,15 +143,15 @@ export default function GoogleAdsPage() {
               {/* Trust Badges Bar */}
               <div className="grid grid-cols-3 gap-3 w-full mb-8 pt-4 border-t border-gray-100">
                 <div className="flex flex-col">
-                  <span className="text-xl sm:text-2xl font-black text-[#7c35ed]">#1 Spot</span>
+                  <span className="text-xl sm:text-2xl font-black text-[#ea580c]">#1 Spot</span>
                   <span className="text-xs font-semibold text-[#566073]">Top Page Placement</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-xl sm:text-2xl font-black text-[#7c35ed]">0% Waste</span>
+                  <span className="text-xl sm:text-2xl font-black text-[#ea580c]">0% Waste</span>
                   <span className="text-xs font-semibold text-[#566073]">Negative Keyword Armor</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-xl sm:text-2xl font-black text-[#7c35ed]">Real ROI</span>
+                  <span className="text-xl sm:text-2xl font-black text-[#ea580c]">Real ROI</span>
                   <span className="text-xs font-semibold text-[#566073]">Tracked Phone Calls</span>
                 </div>
               </div>
@@ -160,14 +160,13 @@ export default function GoogleAdsPage() {
               <div className="flex flex-wrap items-center gap-4">
                 <Link
                   href="/book-a-call"
-                  className="bg-[#7c35ed] hover:bg-[#6d28d9] text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-full shadow-[0_8px_20px_rgba(124,58,237,0.25)] hover:shadow-[0_12px_24px_rgba(124,58,237,0.35)] hover:scale-105 active:scale-95 transition-all flex items-center gap-2 group cursor-pointer"
+                  className="bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-[10px] shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:scale-105 active:scale-95 transition-all flex items-center gap-2 group cursor-pointer border border-white/12 hover:border-white/30"
                 >
                   <span>Book a Free Strategy Call</span>
-                  <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </Link>
                 <Link
                   href="/"
-                  className="bg-white hover:bg-gray-50 text-[#101832] font-semibold text-sm sm:text-base px-6 py-3.5 rounded-full border border-gray-200 transition-all cursor-pointer"
+                  className="bg-white hover:bg-gray-50 text-[#101832] font-semibold text-sm sm:text-base px-6 py-3.5 rounded-[10px] border border-gray-200 transition-all cursor-pointer"
                 >
                   Back to Home
                 </Link>
@@ -176,9 +175,9 @@ export default function GoogleAdsPage() {
 
             {/* Right Column: Google Search Ad Mockup */}
             <div className="lg:col-span-6 flex flex-col">
-              <div className="bg-white rounded-3xl p-5 sm:p-7 border border-gray-200/80 shadow-2xl relative overflow-hidden">
+              <div className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-7 border border-gray-200/80 shadow-2xl relative overflow-hidden">
                 {/* Search Bar Simulation */}
-                <div className="flex items-center gap-3 bg-[#faf8fd] rounded-full px-4 py-2.5 border border-gray-200/60 mb-5 text-xs text-[#101832]">
+                <div className="flex items-center gap-3 bg-[#fffbf7] rounded-full px-4 py-2.5 border border-gray-200/60 mb-5 text-xs text-[#101832]">
                   <span className="text-gray-400">🔍</span>
                   <span className="font-medium flex-1">emergency roof leak repair near me</span>
                   <span className="text-gray-400">✕</span>
@@ -194,7 +193,7 @@ export default function GoogleAdsPage() {
                       <span>•</span>
                       <span className="text-gray-500 font-mono">https://www.systemdigitaltrades.com</span>
                     </div>
-                    <span className="text-[11px] font-bold text-[#7c35ed] bg-[#f5f3ff] px-2 py-0.5 rounded-full border border-[#7c35ed]/15">
+                    <span className="text-[11px] font-bold text-[#ea580c] bg-[#fff7ed] px-2 py-0.5 rounded-full border border-[#ff7a1a]/15">
                       Top Position
                     </span>
                   </div>
@@ -242,15 +241,15 @@ export default function GoogleAdsPage() {
 
                 {/* KPI Performance Bar */}
                 <div className="grid grid-cols-3 gap-2 mt-4 pt-3 border-t border-gray-100 text-center">
-                  <div className="p-2 rounded-xl bg-[#faf8fd]">
+                  <div className="p-2 rounded-xl bg-[#fffbf7]">
                     <span className="text-[10px] text-[#566073] block">Target Audience</span>
                     <span className="text-xs sm:text-sm font-extrabold text-[#101832]">Ready Buyers</span>
                   </div>
-                  <div className="p-2 rounded-xl bg-[#faf8fd]">
+                  <div className="p-2 rounded-xl bg-[#fffbf7]">
                     <span className="text-[10px] text-[#566073] block">Average CPC</span>
-                    <span className="text-xs sm:text-sm font-extrabold text-[#7c35ed]">Optimized Low</span>
+                    <span className="text-xs sm:text-sm font-extrabold text-[#ea580c]">Optimized Low</span>
                   </div>
-                  <div className="p-2 rounded-xl bg-[#faf8fd]">
+                  <div className="p-2 rounded-xl bg-[#fffbf7]">
                     <span className="text-[10px] text-[#566073] block">Conversion Rate</span>
                     <span className="text-xs sm:text-sm font-extrabold text-emerald-600">18.4% Calls</span>
                   </div>
@@ -264,12 +263,12 @@ export default function GoogleAdsPage() {
       {/* ========================================================================= */}
       {/* 2. THE 4 CORE CAPABILITIES */}
       {/* ========================================================================= */}
-      <section className="py-20 sm:py-28 bg-[#faf8fd] border-t border-gray-200/70">
+      <section className="pt-12 sm:pt-16 pb-16 sm:pb-24 bg-[#fffbf7] border-t border-gray-200/70">
         <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-12">
           <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
-            <span className="text-[#7c35ed] text-xs sm:text-sm font-extrabold uppercase tracking-widest block mb-3">
+            {/* <span className="text-[#ea580c] text-xs sm:text-sm font-extrabold uppercase tracking-widest block mb-3">
               Intent-Driven Advertising
-            </span>
+            </span> */}
             <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-[#101832] leading-tight mb-5">
               How our contractor Google ads generate real jobs
             </h2>
@@ -283,19 +282,19 @@ export default function GoogleAdsPage() {
             {capabilities.map((item) => (
               <article
                 key={item.num}
-                className="relative bg-white rounded-3xl p-8 sm:p-9 border border-gray-200/80 shadow-md hover:shadow-xl hover:border-[#7c35ed]/40 transition-all duration-300 hover:-translate-y-1 group flex flex-col justify-between"
+                className="relative bg-white rounded-xl sm:rounded-2xl p-8 sm:p-9 border border-gray-200/80 shadow-md flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-6">
-                    <div className="w-12 h-12 rounded-2xl bg-[#f5f3ff] border border-[#7c35ed]/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:bg-[#7c35ed] group-hover:text-white transition-all duration-300">
+                    <div className="w-12 h-12 rounded-2xl bg-[#fff7ed] border border-[#ff7a1a]/20 flex items-center justify-center flex-shrink-0">
                       {item.icon}
                     </div>
-                    <span className="text-sm font-black text-gray-300 group-hover:text-[#7c35ed] transition-colors">
+                    <span className="text-sm font-black text-gray-300">
                       {item.num}
                     </span>
                   </div>
 
-                  <h3 className="text-xl sm:text-2xl font-bold text-[#101832] mb-3 group-hover:text-[#7c35ed] transition-colors">
+                  <h3 className="text-xl sm:text-2xl font-bold text-[#101832] mb-3">
                     {item.title}
                   </h3>
 
@@ -307,7 +306,7 @@ export default function GoogleAdsPage() {
                 <ul className="pt-6 border-t border-gray-100 flex flex-col gap-2.5">
                   {item.points.map((pt, pIdx) => (
                     <li key={pIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-[#101832]">
-                      <span className="text-[#7c35ed] font-bold">✓</span>
+                      <span className="text-[#ea580c] font-bold">✓</span>
                       <span>{pt}</span>
                     </li>
                   ))}
@@ -321,12 +320,12 @@ export default function GoogleAdsPage() {
       {/* ========================================================================= */}
       {/* 3. VALUE IMPACT: 3 STRATEGIC PILLARS */}
       {/* ========================================================================= */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-12">
           <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
-            <span className="text-[#7c35ed] text-xs sm:text-sm font-extrabold uppercase tracking-widest block mb-3">
+            {/* <span className="text-[#ea580c] text-xs sm:text-sm font-extrabold uppercase tracking-widest block mb-3">
               Engineered For Results
-            </span>
+            </span> */}
             <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-[#101832] leading-tight mb-5">
               Built specifically for high-ticket trade contractors
             </h2>
@@ -339,10 +338,10 @@ export default function GoogleAdsPage() {
             {valuePillars.map((val, vIdx) => (
               <div
                 key={vIdx}
-                className="bg-[#faf8fd] rounded-2xl p-7 border border-purple-100 hover:border-[#7c35ed]/30 hover:bg-white hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
+                className="bg-[#fffbf7] rounded-xl sm:rounded-2xl p-7 border border-orange-100 flex flex-col justify-between"
               >
                 <div>
-                  <span className="text-[11px] font-bold text-[#7c35ed] bg-[#f5f3ff] px-2.5 py-1 rounded-full border border-[#7c35ed]/15 inline-block mb-4">
+                  <span className="text-[11px] font-bold text-[#ea580c] bg-[#fff7ed] px-2.5 py-1 rounded-full border border-[#ff7a1a]/15 inline-block mb-4">
                     {val.badge}
                   </span>
                   <h3 className="text-lg font-bold text-[#101832] mb-2">
@@ -361,15 +360,15 @@ export default function GoogleAdsPage() {
       {/* ========================================================================= */}
       {/* 4. FINAL HIGH-CONVERTING CTA CARD */}
       {/* ========================================================================= */}
-      <section className="py-12 sm:py-16 bg-[#faf8fd]">
+      <section className="py-12 sm:py-16 bg-[#fffbf7]">
         <div className="max-w-4xl mx-auto px-6 sm:px-10">
           <div className="relative rounded-3xl p-6 sm:p-8 lg:p-10 bg-gradient-to-br from-[#101832] via-[#1b2240] to-[#25183f] text-white shadow-xl overflow-hidden text-center">
             {/* Ambient Purple Glow Orbs */}
-            <div className="absolute -top-24 -right-24 w-80 h-80 bg-[#7c35ed]/20 rounded-full blur-3xl pointer-events-none" />
-            <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-[#9333ea]/15 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -top-24 -right-24 w-80 h-80 bg-[#ff7a1a]/20 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-[#ea580c]/15 rounded-full blur-3xl pointer-events-none" />
 
             <div className="relative z-10 max-w-2xl mx-auto">
-              <span className="text-[#c084fc] text-xs sm:text-sm font-semibold uppercase tracking-widest block mb-2">
+              <span className="text-[#ff9838] text-xs sm:text-sm font-semibold uppercase tracking-widest block mb-2">
                 Capture Ready-to-Hire Searches
               </span>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white leading-tight mb-3">
@@ -382,14 +381,13 @@ export default function GoogleAdsPage() {
               <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
                 <Link
                   href="/book-a-call"
-                  className="bg-gradient-to-r from-[#7c35ed] to-[#9333ea] hover:from-[#6d28d9] hover:to-[#7c35ed] text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-full shadow-[0_10px_24px_rgba(124,58,237,0.4)] hover:shadow-[0_14px_30px_rgba(124,58,237,0.6)] hover:scale-105 active:scale-95 transition-all text-center flex items-center justify-center gap-2 group cursor-pointer"
+                  className="bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-[10px] border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out text-center flex items-center justify-center gap-2 group cursor-pointer"
                 >
                   <span>Book a Free Strategy Call</span>
-                  <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </Link>
                 <Link
                   href="/"
-                  className="bg-white/10 hover:bg-white/15 text-white font-semibold text-sm sm:text-base px-6 py-3.5 rounded-full border border-white/15 backdrop-blur-sm transition-all text-center cursor-pointer"
+                  className="bg-white/10 hover:bg-white/15 text-white font-semibold text-sm sm:text-base px-6 py-3.5 rounded-[10px] border border-white/15 backdrop-blur-sm transition-all text-center cursor-pointer"
                 >
                   Back to Home
                 </Link>

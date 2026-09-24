@@ -139,7 +139,7 @@ export default function WhoWeHelpPage() {
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <Link
               href="/book-a-call"
-              className="bg-[#7c35ed] hover:bg-[#6d28d9] text-white font-bold text-sm px-8 py-4 rounded-full shadow-[0_10px_24px_rgba(124,58,237,0.3)] hover:shadow-[0_14px_30px_rgba(124,58,237,0.45)] transition-all flex items-center gap-2 group cursor-pointer"
+              className="bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm px-8 py-4 rounded-[10px] border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out flex items-center gap-2 group cursor-pointer"
             >
               <span>Book a Discovery Call</span>
               <span className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 group-hover:translate-x-0.5 transition-transform">
@@ -151,7 +151,7 @@ export default function WhoWeHelpPage() {
 
             <a
               href="#trades-grid"
-              className="px-6 py-4 rounded-full border border-gray-200 text-sm font-bold text-[#101832] hover:border-[#7c35ed] hover:text-[#7c35ed] transition-colors cursor-pointer"
+              className="px-6 py-4 rounded-[10px] border border-gray-200 text-sm font-bold text-[#101832] hover:border-[#101832] transition-colors cursor-pointer"
             >
               Explore Supported Trades &darr;
             </a>
@@ -343,7 +343,7 @@ export default function WhoWeHelpPage() {
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                 <Link
                   href="/book-a-call"
-                  className="bg-[#7c35ed] hover:bg-[#6d28d9] text-white font-bold text-sm px-8 py-4 rounded-full shadow-lg transition-all flex items-center gap-2 group"
+                  className="bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm px-8 py-4 rounded-[10px] border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out flex items-center gap-2 group cursor-pointer"
                 >
                   <span>Check Your Trade Fit</span>
                   <span className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 group-hover:translate-x-0.5 transition-transform">
@@ -384,7 +384,7 @@ export default function WhoWeHelpPage() {
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <Link
               href="/book-a-call"
-              className="bg-[#7c35ed] hover:bg-[#6d28d9] text-white font-bold text-sm px-8 py-4 rounded-full shadow-[0_10px_24px_rgba(124,58,237,0.3)] transition-all flex items-center gap-2 group"
+              className="bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm px-8 py-4 rounded-[10px] border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out flex items-center gap-2 group cursor-pointer"
             >
               <span>Book Your Free Discovery Call</span>
               <span className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 group-hover:translate-x-0.5 transition-transform">
@@ -396,7 +396,7 @@ export default function WhoWeHelpPage() {
 
             <Link
               href="/pricing"
-              className="px-6 py-4 rounded-full border border-gray-200 text-sm font-bold text-[#101832] hover:border-[#7c35ed] hover:text-[#7c35ed] transition-colors"
+              className="px-6 py-4 rounded-[10px] border border-gray-200 text-sm font-bold text-[#101832] hover:border-[#101832] transition-colors cursor-pointer"
             >
               View Simple $297/mo Pricing
             </Link>

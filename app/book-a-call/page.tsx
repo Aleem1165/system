@@ -520,7 +520,7 @@ export default function BookACallPage() {
                       type="button"
                       disabled={!companyName.trim()}
                       onClick={() => setCurrentStep(2)}
-                      className="w-full bg-[#7c35ed] disabled:opacity-50 hover:bg-[#6d28d9] text-white font-bold text-sm py-3.5 rounded-xl transition-all cursor-pointer"
+                      className="w-full bg-[#121316] disabled:opacity-50 hover:bg-[#20222a] text-white font-bold text-sm py-3.5 rounded-[10px] border border-white/12 transition-all cursor-pointer"
                     >
                       Continue →
                     </button>
@@ -546,7 +546,7 @@ export default function BookACallPage() {
                       type="button"
                       disabled={!clientName.trim()}
                       onClick={() => setCurrentStep(3)}
-                      className="w-full bg-[#7c35ed] disabled:opacity-50 hover:bg-[#6d28d9] text-white font-bold text-sm py-3.5 rounded-xl transition-all cursor-pointer"
+                      className="w-full bg-[#121316] disabled:opacity-50 hover:bg-[#20222a] text-white font-bold text-sm py-3.5 rounded-[10px] border border-white/12 transition-all cursor-pointer"
                     >
                       Continue →
                     </button>
@@ -574,7 +574,7 @@ export default function BookACallPage() {
                     <button
                       type="submit"
                       disabled={!phone.trim()}
-                      className="w-full bg-[#7c35ed] disabled:opacity-50 hover:bg-[#6d28d9] text-white font-bold text-sm py-3.5 rounded-xl transition-all shadow-md cursor-pointer"
+                      className="w-full bg-[#121316] disabled:opacity-50 hover:bg-[#20222a] text-white font-bold text-sm py-3.5 rounded-[10px] border border-white/12 transition-all shadow-md cursor-pointer"
                     >
                       Book a Call With Us →
                     </button>
@@ -596,7 +596,7 @@ export default function BookACallPage() {
                 <button
                   type="button"
                   onClick={resetModal}
-                  className="px-6 py-2.5 rounded-xl bg-[#7c35ed] text-white font-bold text-xs hover:bg-[#6d28d9] transition-all cursor-pointer"
+                  className="px-6 py-2.5 rounded-[10px] bg-[#121316] text-white font-bold text-xs hover:bg-[#20222a] border border-white/12 transition-all cursor-pointer"
                 >
                   Done
                 </button>

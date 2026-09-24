@@ -32,12 +32,8 @@ export default function Footer() {
 
             <Link
               href="/book-a-call"
-              className="relative group overflow-hidden mt-2 bg-gradient-to-r from-[#ff7a1a] to-[#ea580c] text-white font-bold text-sm px-6 py-3 rounded-[10px] border border-white/20 shadow-[0_4px_14px_rgba(255,122,26,0.25),inset_0_1px_0_rgba(255,255,255,0.2)] hover:shadow-[0_6px_18px_rgba(255,122,26,0.35)] transition-all duration-500 ease-out flex items-center justify-center"
+              className="relative group overflow-hidden mt-2 bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm px-6 py-3 rounded-[10px] border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out flex items-center justify-center cursor-pointer"
             >
-              <span
-                aria-hidden="true"
-                className="absolute inset-0 bg-gradient-to-r from-[#ea580c] to-[#ff7a1a] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none"
-              />
               <span className="relative z-10">Book a Call</span>
             </Link>
           </div>

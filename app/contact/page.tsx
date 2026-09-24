@@ -210,7 +210,7 @@ export default function ContactPage() {
             </div>
             <Link
               href="/book-a-call"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#7c35ed] hover:bg-[#6d28d9] text-white font-bold text-sm shadow-[0_8px_20px_rgba(124,58,237,0.35)] transition-all shrink-0 transform hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-[10px] bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out shrink-0 cursor-pointer"
             >
               <span>Schedule 20-Min Call</span>
               <span className="text-base font-bold">→</span>
@@ -280,14 +280,14 @@ export default function ContactPage() {
               <div className="flex flex-wrap items-center justify-center gap-4">
                 <Link
                   href="/book-a-call"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-9 py-4 rounded-full bg-[#7c35ed] hover:bg-[#6d28d9] text-white font-bold text-sm shadow-[0_8px_20px_rgba(124,58,237,0.35)] transition-all transform hover:-translate-y-0.5"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-9 py-4 rounded-[10px] bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out cursor-pointer"
                 >
                   <span>Book A Strategy Call</span>
                   <span className="text-base">→</span>
                 </Link>
                 <a
                   href="tel:8888100013"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 hover:bg-white/15 text-white font-bold text-sm border border-white/20 transition-all"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-[10px] bg-white/10 hover:bg-white/15 text-white font-bold text-sm border border-white/20 transition-all cursor-pointer"
                 >
                   <span>Call Us: (888) 810-0013</span>
                 </a>

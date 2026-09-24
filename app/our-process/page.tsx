@@ -138,14 +138,14 @@ export default function OurProcessPage() {
           <div className="flex flex-wrap items-center justify-center gap-4 mb-16">
             <Link
               href="/book-a-call"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#7c35ed] hover:bg-[#6d28d9] text-white font-bold text-sm shadow-[0_8px_20px_rgba(124,58,237,0.28)] hover:shadow-[0_12px_24px_rgba(124,58,237,0.36)] transition-all transform hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-[10px] bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out cursor-pointer"
             >
               <span>Book Your 20-Min Call</span>
               <span className="text-base font-bold">→</span>
             </Link>
             <Link
               href="/"
-              className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-white hover:bg-gray-50 text-[#101832] font-bold text-sm border border-gray-200 shadow-sm hover:border-gray-300 transition-all"
+              className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-[10px] bg-white hover:bg-gray-50 text-[#101832] font-bold text-sm border border-gray-200 shadow-sm hover:border-gray-300 transition-all"
             >
               <span>Explore The System</span>
             </Link>
@@ -422,14 +422,14 @@ export default function OurProcessPage() {
               <div className="flex flex-wrap items-center justify-center gap-4">
                 <Link
                   href="/book-a-call"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-9 py-4 rounded-full bg-[#7c35ed] hover:bg-[#6d28d9] text-white font-bold text-sm shadow-[0_8px_20px_rgba(124,58,237,0.35)] transition-all transform hover:-translate-y-0.5"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-9 py-4 rounded-[10px] bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out cursor-pointer"
                 >
                   <span>Book Step 1 Now</span>
                   <span className="text-base">→</span>
                 </Link>
                 <a
                   href="tel:8888100013"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 hover:bg-white/15 text-white font-bold text-sm border border-white/20 transition-all"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-[10px] bg-white/10 hover:bg-white/15 text-white font-bold text-sm border border-white/20 transition-all cursor-pointer"
                 >
                   <span>Call Us: (888) 810-0013</span>
                 </a>

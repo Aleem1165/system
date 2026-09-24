@@ -20,7 +20,7 @@ export default function AICallAgentPage() {
         "Eliminates busy signals and dreaded voicemail dead-ends",
       ],
       icon: (
-        <svg className="w-6 h-6 text-[#7c35ed]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-[#ea580c]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -39,7 +39,7 @@ export default function AICallAgentPage() {
         "Filters out spam, robo-telemarketers, and vendor sales pitches",
       ],
       icon: (
-        <svg className="w-6 h-6 text-[#7c35ed]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-[#ea580c]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -58,7 +58,7 @@ export default function AICallAgentPage() {
         "Gives homeowners peace of mind when your front office is closed",
       ],
       icon: (
-        <svg className="w-6 h-6 text-[#7c35ed]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-[#ea580c]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -77,7 +77,7 @@ export default function AICallAgentPage() {
         "Sends instant calendar invites and confirmation texts to the homeowner",
       ],
       icon: (
-        <svg className="w-6 h-6 text-[#7c35ed]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-[#ea580c]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -107,39 +107,41 @@ export default function AICallAgentPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-[#101832] font-sans selection:bg-[#7c35ed] selection:text-white">
+    <div className="min-h-screen bg-white text-[#101832] font-sans selection:bg-[#ff7a1a] selection:text-white">
       {/* ========================================================================= */}
       {/* 1. HERO SECTION (Asymmetric Split with Live Voice AI Mockup)              */}
       {/* ========================================================================= */}
-      <section className="relative pt-32 sm:pt-40 pb-20 sm:pb-28 overflow-hidden bg-gradient-to-b from-[#faf8fd] via-white to-white border-b border-gray-100">
+      <section className="relative pt-32 sm:pt-40 pb-10 sm:pb-14 overflow-hidden bg-gradient-to-b from-[#fff8f2] via-white to-white border-b border-gray-100">
         {/* Ambient Glows */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-gradient-to-tr from-purple-200/40 via-violet-100/40 to-transparent rounded-full blur-3xl pointer-events-none -z-10" />
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-gradient-to-tr from-orange-200/35 via-amber-100/35 to-transparent rounded-full blur-3xl pointer-events-none -z-10" />
 
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
             {/* Left Column: Copy & Value Proposition */}
             <div className="lg:col-span-6 flex flex-col items-start">
               {/* Badges */}
+              {/* 
               <div className="flex flex-wrap items-center gap-2.5 mb-6">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f5f3ff] border border-[#ede9fe] text-[#7c35ed] text-xs font-bold uppercase tracking-wider">
-                  <span className="w-2 h-2 rounded-full bg-[#7c35ed] animate-pulse" />
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#fff7ed] border border-[#ffedd5] text-[#ea580c] text-xs font-bold uppercase tracking-wider">
+                  <span className="w-2 h-2 rounded-full bg-[#ff7a1a] animate-pulse" />
                   Other Services
                 </div>
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-50 text-purple-700 text-xs font-semibold border border-purple-200">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-50 text-orange-700 text-xs font-semibold border border-orange-200">
                   <span>🎙️</span>
                   <span>24/7 AI Voice Dispatch</span>
                 </div>
               </div>
+              */}
 
               {/* Eyebrow */}
-              <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#7c35ed] mb-3">
+              <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#ea580c] mb-3">
                 Zero Missed Inbound Calls
               </span>
 
               {/* Headline */}
               <h1 className="text-3xl sm:text-5xl lg:text-[2.9rem] font-extrabold tracking-tight text-[#101832] leading-[1.12] mb-6">
                 Calls Answered Instantly.{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7c35ed] via-[#9333ea] to-[#a855f7]">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ffae19] via-[#ff6818] to-[#d92323]">
                   Even When Your Hands Are On The Tools.
                 </span>
               </h1>
@@ -152,7 +154,7 @@ export default function AICallAgentPage() {
               {/* Key Trust Metrics */}
               <div className="grid grid-cols-3 gap-3 sm:gap-4 w-full max-w-lg mb-8">
                 <div className="p-3.5 sm:p-4 rounded-xl bg-white border border-gray-200 shadow-sm text-center">
-                  <div className="text-xl sm:text-2xl font-black text-[#7c35ed]">&lt; 2s</div>
+                  <div className="text-xl sm:text-2xl font-black text-[#ea580c]">&lt; 2s</div>
                   <div className="text-[11px] sm:text-xs text-[#566073] font-medium mt-0.5">Answer Speed</div>
                 </div>
                 <div className="p-3.5 sm:p-4 rounded-xl bg-white border border-gray-200 shadow-sm text-center">
@@ -169,14 +171,14 @@ export default function AICallAgentPage() {
               <div className="flex flex-wrap items-center gap-4 w-full sm:w-auto">
                 <Link
                   href="/book-a-call"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#7c35ed] hover:bg-[#6d28d9] text-white font-bold text-sm shadow-[0_8px_20px_rgba(124,58,237,0.28)] hover:shadow-[0_12px_24px_rgba(124,58,237,0.36)] transition-all transform hover:-translate-y-0.5"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-[10px] bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] transition-all transform hover:-translate-y-0.5 border border-white/12 hover:border-white/30"
                 >
                   <span>Schedule Voice Demo</span>
                   <span className="text-base font-bold">→</span>
                 </Link>
                 <Link
                   href="/"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-white hover:bg-gray-50 text-[#101832] font-bold text-sm border border-gray-200 shadow-sm hover:border-gray-300 transition-all"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-[10px] bg-white hover:bg-gray-50 text-[#101832] font-bold text-sm border border-gray-200 shadow-sm hover:border-gray-300 transition-all"
                 >
                   <span>Explore Full System</span>
                 </Link>
@@ -258,10 +260,10 @@ export default function AICallAgentPage() {
 
                   {/* AI Agent Bubble */}
                   <div className="flex gap-2.5 items-start flex-row-reverse">
-                    <div className="w-6 h-6 rounded-full bg-[#7c35ed] text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                    <div className="w-6 h-6 rounded-full bg-[#ff7a1a] text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
                       AI
                     </div>
-                    <div className="p-3 rounded-2xl rounded-tr-sm bg-gradient-to-br from-[#7c35ed]/90 to-[#6d28d9]/90 text-xs text-white leading-relaxed max-w-[88%] shadow-md">
+                    <div className="p-3 rounded-2xl rounded-tr-sm bg-gradient-to-br from-[#7c35ed]/90 to-[#c2410c]/90 text-xs text-white leading-relaxed max-w-[88%] shadow-md">
                       &ldquo;I understand how urgent that is, Mark. We have an on-call emergency technician in North Austin today between 2:00 PM and 4:00 PM. Would you like me to reserve that slot for you right now?&rdquo;
                     </div>
                   </div>
@@ -296,12 +298,12 @@ export default function AICallAgentPage() {
       {/* ========================================================================= */}
       {/* 2. CORE CAPABILITIES (4 Pillars)                                          */}
       {/* ========================================================================= */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="pt-12 sm:pt-16 pb-16 sm:pb-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#7c35ed] mb-3 block">
+            {/* <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#ea580c] mb-3 block">
               Built Specifically For Local Trades
-            </span>
+            </span> */}
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#101832] tracking-tight">
               An AI Receptionist That Truly Understands Contractor Workflows
             </h2>
@@ -314,19 +316,19 @@ export default function AICallAgentPage() {
             {capabilities.map((cap) => (
               <div
                 key={cap.num}
-                className="p-8 sm:p-10 rounded-2xl bg-white border border-gray-200 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all duration-300 group relative flex flex-col justify-between"
+                className="p-8 sm:p-10 rounded-xl sm:rounded-2xl bg-white border border-gray-200 shadow-sm relative flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-6">
-                    <div className="w-12 h-12 rounded-xl bg-[#f5f3ff] flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 rounded-xl bg-[#fff7ed] flex items-center justify-center">
                       {cap.icon}
                     </div>
-                    <span className="text-2xl font-black text-gray-200 group-hover:text-[#7c35ed]/30 transition-colors font-mono">
+                    <span className="text-2xl font-black text-gray-200 font-mono">
                       {cap.num}
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold text-[#101832] mb-3 group-hover:text-[#7c35ed] transition-colors">
+                  <h3 className="text-xl font-bold text-[#101832] mb-3">
                     {cap.title}
                   </h3>
 
@@ -356,12 +358,12 @@ export default function AICallAgentPage() {
       {/* ========================================================================= */}
       {/* 3. STRATEGIC VALUE IMPACT (3 Core Pillars)                                 */}
       {/* ========================================================================= */}
-      <section className="py-20 sm:py-28 bg-[#faf8fd] border-y border-purple-50">
+      <section className="py-20 sm:py-28 bg-[#fffbf7] border-y border-orange-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#7c35ed] mb-3 block">
+            {/* <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#ea580c] mb-3 block">
               The Cost of a Missed Ring
-            </span>
+            </span> */}
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#101832] tracking-tight">
               Why Inbound Speed Wins The Contract Every Single Time
             </h2>
@@ -374,10 +376,10 @@ export default function AICallAgentPage() {
             {valuePillars.map((pillar, i) => (
               <div
                 key={i}
-                className="p-8 rounded-2xl bg-white border border-gray-200 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between"
+                className="p-8 rounded-xl sm:rounded-2xl bg-white border border-gray-200 shadow-sm flex flex-col justify-between"
               >
                 <div>
-                  <span className="inline-block px-3 py-1 rounded-full bg-[#f5f3ff] text-[#7c35ed] text-xs font-bold uppercase tracking-wider mb-4 border border-[#ede9fe]">
+                  <span className="inline-block px-3 py-1 rounded-full bg-[#fff7ed] text-[#ea580c] text-xs font-bold uppercase tracking-wider mb-4 border border-[#ffedd5]">
                     {pillar.badge}
                   </span>
                   <h3 className="text-xl font-extrabold text-[#101832] mb-3">
@@ -387,7 +389,7 @@ export default function AICallAgentPage() {
                     {pillar.desc}
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-gray-100 flex items-center text-xs font-bold text-[#7c35ed]">
+                <div className="mt-6 pt-4 border-t border-gray-100 flex items-center text-xs font-bold text-[#ea580c]">
                   <span>Built for trade profitability</span>
                   <span className="ml-1">→</span>
                 </div>
@@ -404,11 +406,11 @@ export default function AICallAgentPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#101832] via-[#1a1c3d] to-[#2b1754] text-white p-10 sm:p-16 text-center shadow-2xl">
             {/* Ambient Background Blur */}
-            <div className="absolute -top-24 -left-24 w-80 h-80 bg-[#7c35ed]/30 rounded-full blur-3xl pointer-events-none" />
-            <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -top-24 -left-24 w-80 h-80 bg-[#ff7a1a]/30 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-orange-500/20 rounded-full blur-3xl pointer-events-none" />
 
             <div className="relative z-10 max-w-3xl mx-auto">
-              <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-purple-300 text-xs font-bold uppercase tracking-wider mb-6 border border-white/15">
+              <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-orange-300 text-xs font-bold uppercase tracking-wider mb-6 border border-white/15">
                 Stop Bleeding High-Ticket Revenue
               </span>
               <h2 className="text-3xl sm:text-5xl font-black tracking-tight mb-6 leading-tight">
@@ -420,14 +422,13 @@ export default function AICallAgentPage() {
               <div className="flex flex-wrap items-center justify-center gap-4">
                 <Link
                   href="/book-a-call"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-9 py-4 rounded-full bg-[#7c35ed] hover:bg-[#6d28d9] text-white font-bold text-sm shadow-[0_8px_20px_rgba(124,58,237,0.35)] transition-all transform hover:-translate-y-0.5"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-9 py-4 rounded-[10px] bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] transition-all transform hover:-translate-y-0.5 border border-white/12 hover:border-white/30"
                 >
                   <span>Schedule Your AI Demo</span>
-                  <span className="text-base">→</span>
                 </Link>
                 <a
                   href="tel:8888100013"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 hover:bg-white/15 text-white font-bold text-sm border border-white/20 transition-all"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-[10px] bg-white/10 hover:bg-white/15 text-white font-bold text-sm border border-white/20 transition-all"
                 >
                   <span>Call Us: (888) 810-0013</span>
                 </a>

@@ -413,13 +413,13 @@ export default function PrivacyPolicyPage() {
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
                   href="mailto:support@systemdigital.com"
-                  className="px-5 py-2.5 rounded-xl bg-white border border-gray-200 text-xs font-bold text-[#7c35ed] hover:border-[#7c35ed] transition-colors shadow-2xs text-center"
+                  className="px-5 py-2.5 rounded-[10px] bg-white border border-gray-200 text-xs font-bold text-[#7c35ed] hover:border-[#101832] transition-colors shadow-2xs text-center"
                 >
                   support@systemdigital.com
                 </a>
                 <a
                   href="tel:+18888100013"
-                  className="px-5 py-2.5 rounded-xl bg-[#7c35ed] text-white text-xs font-bold hover:bg-[#6d28d9] transition-colors shadow-2xs text-center"
+                  className="px-5 py-2.5 rounded-[10px] bg-[#121316] text-white text-xs font-bold hover:bg-[#20222a] transition-colors shadow-2xs text-center border border-white/12 hover:border-white/30"
                 >
                   (888) 810-0013
                 </a>
@@ -444,13 +444,13 @@ export default function PrivacyPolicyPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4 w-full sm:w-auto max-w-xs sm:max-w-none">
             <Link
               href="/pricing"
-              className="w-full sm:w-auto bg-[#7c35ed] hover:bg-[#6d28d9] text-white font-bold text-sm px-7 py-3.5 rounded-full shadow-md transition-all text-center whitespace-nowrap"
+              className="w-full sm:w-auto bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm px-7 py-3.5 rounded-[10px] shadow-md transition-all text-center whitespace-nowrap border border-white/12 hover:border-white/30"
             >
               View $297/mo Pricing
             </Link>
             <Link
               href="/book-a-call"
-              className="w-full sm:w-auto px-6 py-3.5 rounded-full border border-gray-200 text-sm font-bold text-[#101832] hover:bg-gray-50 transition-colors text-center whitespace-nowrap bg-white"
+              className="w-full sm:w-auto px-6 py-3.5 rounded-[10px] border border-gray-200 text-sm font-bold text-[#101832] hover:bg-gray-50 transition-colors text-center whitespace-nowrap bg-white"
             >
               Book A Discovery Call
             </Link>
