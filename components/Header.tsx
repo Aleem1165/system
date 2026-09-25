@@ -305,7 +305,7 @@ export default function Header() {
               alt="Rendro Systems Logo"
               width={258}
               height={88}
-              className="h-[40px] sm:h-[46px] md:h-[64px] w-auto object-contain transition-all"
+              className="h-[30px] sm:h-[36px] md:h-[42px] w-auto object-contain transition-all"
               priority
             />
           </Link>
@@ -496,9 +496,9 @@ export default function Header() {
             {/* Book a Call Primary Button */}
             <Link
               href="/book-a-call"
-              className="relative group overflow-hidden bg-[#121316] hover:bg-[#20222a] text-white font-bold text-[13px] sm:text-[14px] px-5 sm:px-6 py-2 sm:py-2.5 rounded-[10px] border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out flex items-center gap-2 cursor-pointer"
+              className="inline-flex items-center justify-center bg-[#121316] text-white font-bold text-[13px] sm:text-[14px] px-5 sm:px-6 py-2 sm:py-2.5 rounded-[10px] border border-white/12 cursor-pointer"
             >
-              <span className="relative z-10">Book a Call</span>
+              <span className="tracking-tight">Book a Call</span>
             </Link>
 
 
@@ -514,8 +514,8 @@ export default function Header() {
               <div className="relative w-5 h-4 flex items-center justify-end">
                 <span
                   className={`absolute left-0 right-0 h-[2px] rounded-full bg-white transition-all duration-300 origin-center ${mobileMenuOpen
-                      ? "rotate-45 translate-y-0"
-                      : "-translate-y-[6px]"
+                    ? "rotate-45 translate-y-0"
+                    : "-translate-y-[6px]"
                     }`}
                 />
                 <span
@@ -524,8 +524,8 @@ export default function Header() {
                 />
                 <span
                   className={`absolute left-0 right-0 h-[2px] rounded-full bg-white transition-all duration-300 origin-center ${mobileMenuOpen
-                      ? "-rotate-45 translate-y-0"
-                      : "translate-y-[6px]"
+                    ? "-rotate-45 translate-y-0"
+                    : "translate-y-[6px]"
                     }`}
                 />
               </div>
@@ -682,7 +682,7 @@ export default function Header() {
             <div className="pt-4 border-t border-gray-100 flex flex-col gap-3">
               <Link
                 href="/book-a-call"
-                className="w-full bg-[#121316] hover:bg-[#20222a] text-white text-center font-bold py-3 rounded-[10px] border border-white/12 shadow-[0_2px_6px_rgba(0,0,0,0.15)] flex items-center justify-center transition-all cursor-pointer"
+                className="w-full bg-[#121316] text-white text-center font-bold py-3 rounded-[10px] border border-white/12 flex items-center justify-center cursor-pointer"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span>Book a Call</span>

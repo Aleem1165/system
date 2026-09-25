@@ -1003,8 +1003,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
 
             {/* Step 1 */}
-            <article className="relative bg-white rounded-3xl p-7 sm:p-8 border border-gray-200/70 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between group overflow-hidden">
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#ff7a1a] to-[#ea580c] group-hover:h-1.5 transition-all duration-300" />
+            <article className="relative bg-white rounded-3xl p-7 sm:p-8 border border-gray-200/70 shadow-lg flex flex-col justify-between overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#ff7a1a] to-[#ea580c]" />
               <div>
                 <div className="flex items-center justify-between gap-4 mb-6">
                   <span className="w-12 h-12 rounded-2xl bg-[#121316] text-white font-extrabold text-lg flex items-center justify-center border border-white/10 shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.15)] flex-shrink-0">
@@ -1024,8 +1024,8 @@ export default function Home() {
             </article>
 
             {/* Step 2 */}
-            <article className="relative bg-white rounded-3xl p-7 sm:p-8 border border-gray-200/70 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between group overflow-hidden">
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#ff7a1a] to-[#ea580c] group-hover:h-1.5 transition-all duration-300" />
+            <article className="relative bg-white rounded-3xl p-7 sm:p-8 border border-gray-200/70 shadow-lg flex flex-col justify-between overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#ff7a1a] to-[#ea580c]" />
               <div>
                 <div className="flex items-center justify-between gap-4 mb-6">
                   <span className="w-12 h-12 rounded-2xl bg-[#121316] text-white font-extrabold text-lg flex items-center justify-center border border-white/10 shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.15)] flex-shrink-0">
@@ -1045,8 +1045,8 @@ export default function Home() {
             </article>
 
             {/* Step 3 */}
-            <article className="relative bg-white rounded-3xl p-7 sm:p-8 border border-gray-200/70 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between group overflow-hidden">
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#ff7a1a] to-[#ea580c] group-hover:h-1.5 transition-all duration-300" />
+            <article className="relative bg-white rounded-3xl p-7 sm:p-8 border border-gray-200/70 shadow-lg flex flex-col justify-between overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#ff7a1a] to-[#ea580c]" />
               <div>
                 <div className="flex items-center justify-between gap-4 mb-6">
                   <span className="w-12 h-12 rounded-2xl bg-[#121316] text-white font-extrabold text-lg flex items-center justify-center border border-white/10 shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.15)] flex-shrink-0">
@@ -1439,13 +1439,9 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto max-w-md sm:max-w-none">
             <Link
               href="/book-a-call"
-              className="relative group overflow-hidden w-full sm:w-auto bg-[#121316] hover:bg-[#20222a] text-white font-bold text-xs min-[360px]:text-[13px] sm:text-base px-6 min-[360px]:px-7 sm:px-9 py-3.5 sm:py-4 rounded-[10px] border border-white/12 hover:border-white/30 shadow-[0_2px_8px_rgba(0,0,0,0.18),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_14px_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer"
+              className="w-full sm:w-auto bg-[#121316] text-white font-bold text-xs min-[360px]:text-[13px] sm:text-base px-6 min-[360px]:px-7 sm:px-9 py-3.5 sm:py-4 rounded-[10px] border border-white/12 flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer"
             >
-              <span
-                aria-hidden="true"
-                className="absolute inset-0 bg-gradient-to-b from-[#2b2d35] to-[#14151a] opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none"
-              />
-              <span className="relative z-10">Book Your Free Growth Strategy Call</span>
+              <span>Book Your Free Growth Strategy Call</span>
             </Link>
 
             <a

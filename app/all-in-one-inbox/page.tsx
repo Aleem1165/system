@@ -334,14 +334,11 @@ export default function AllInOneInboxPage() {
       </section>
 
       {/* ========================================================================= */}
-      {/* 3. SYSTEM HIGHLIGHTS / EVERYTHING INCLUDED */}
+      {/* 3. SYSTEM HIGHLIGHTS / EVERYTHING INCLUDED (COMMENTED OUT) */}
       {/* ========================================================================= */}
-      <section className="py-16 sm:py-24 bg-white">
+      {/* <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-12">
           <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
-            {/* <span className="text-[#ea580c] text-xs sm:text-sm font-extrabold uppercase tracking-widest block mb-3">
-              Standard Across Every Build
-            </span> */}
             <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-[#101832] leading-tight mb-5">
               Built specifically for modern contractor workflows
             </h2>
@@ -369,7 +366,7 @@ export default function AllInOneInboxPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ========================================================================= */}
       {/* 4. FINAL HIGH-CONVERTING CTA CARD */}
@@ -395,15 +392,9 @@ export default function AllInOneInboxPage() {
               <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
                 <Link
                   href="/book-a-call"
-                  className="bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-[10px] border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out text-center flex items-center justify-center gap-2 group cursor-pointer"
+                  className="inline-flex items-center justify-center bg-[#121316] text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-[10px] border border-white/12 cursor-pointer"
                 >
                   <span>Book a Free Strategy Call</span>
-                </Link>
-                <Link
-                  href="/"
-                  className="bg-white/10 hover:bg-white/15 text-white font-semibold text-sm sm:text-base px-6 py-3.5 rounded-[10px] border border-white/15 backdrop-blur-sm transition-all text-center cursor-pointer"
-                >
-                  Back to Home
                 </Link>
               </div>
             </div>
