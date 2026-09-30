@@ -1,28 +1,24 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="bg-[#101832] text-white border-t border-gray-800 pt-16 pb-12 mt-auto">
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 pb-14 border-b border-gray-800">
-          
+
           {/* Brand & Mission Column */}
           <div className="lg:col-span-4 flex flex-col items-start gap-5">
-            {/* Logo placeholder with dot indicator */}
-            <Link href="/" className="flex items-center gap-2.5 group select-none">
-              <div className="relative flex items-center justify-center">
-                <span className="w-3.5 h-3.5 rounded-full bg-[#ff7a1a] shadow-[0_0_14px_rgba(255,122,26,0.9)]" />
-                <span className="absolute w-5 h-5 rounded-full bg-[#ff7a1a]/30 animate-pulse" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-[20px] font-extrabold tracking-tight text-white leading-none">
-                  Rendro<span className="text-[#ff7a1a]">.</span>
-                </span>
-                <span className="text-[10px] uppercase tracking-widest font-semibold text-gray-400">
-                  Systems
-                </span>
-              </div>
+            {/* Brand Short Logo */}
+            <Link href="/" className="inline-flex items-center select-none" aria-label="Home">
+              <Image
+                src="/assets/images/logo-short-white.png"
+                alt="Rendro Systems Logo"
+                width={120}
+                height={120}
+                className="w-14 h-14 sm:w-16 sm:h-16 object-contain"
+              />
             </Link>
 
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
@@ -40,7 +36,7 @@ export default function Footer() {
 
           {/* Navigation Columns */}
           <div className="lg:col-span-8 grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-6">
-            
+
             {/* System Column */}
             <div className="flex flex-col gap-3">
               <h3 className="text-xs font-bold uppercase tracking-wider text-gray-400">

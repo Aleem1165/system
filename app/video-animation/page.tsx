@@ -115,7 +115,7 @@ export default function VideoAnimationPage() {
         {/* Ambient Glow */}
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-gradient-to-tr from-orange-200/35 via-amber-100/35 to-transparent rounded-full blur-3xl pointer-events-none -z-10" />
 
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
             {/* Left Column: Copy & Value Proposition */}
             <div className="lg:col-span-6 flex flex-col items-start">
@@ -392,31 +392,35 @@ export default function VideoAnimationPage() {
       {/* ========================================================================= */}
       <section className="py-20 sm:py-28 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#101832] via-[#1a1c3d] to-[#2b1754] text-white p-10 sm:p-16 text-center shadow-2xl">
-            {/* Ambient Background Glows */}
-            <div className="absolute -top-24 -left-24 w-80 h-80 bg-[#ff7a1a]/30 rounded-full blur-3xl pointer-events-none" />
-            <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-orange-500/20 rounded-full blur-3xl pointer-events-none" />
+          <div className="relative rounded-3xl p-8 sm:p-12 lg:p-14 bg-[#101832] text-center border border-white/10 shadow-[0_25px_60px_-15px_rgba(16,24,50,0.5)] overflow-hidden">
+            {/* Top Border Glow Line (Linear Style) */}
+            <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#ff7a1a]/70 to-transparent" />
+
+            {/* Subtle Ambient Brand Glow */}
+            <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-96 h-48 bg-[#ff5500]/15 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-20 right-10 w-72 h-40 bg-[#ff7a1a]/10 rounded-full blur-3xl pointer-events-none" />
 
             <div className="relative z-10 max-w-3xl mx-auto">
-              <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-orange-300 text-xs font-bold uppercase tracking-wider mb-6 border border-white/15">
+              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.06] border border-white/10 text-[#ff8c38] text-xs sm:text-sm font-semibold uppercase tracking-wider mb-4 backdrop-blur-md">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#ff7a1a] animate-pulse" />
                 Elevate Your Estimating Process
               </span>
-              <h2 className="text-3xl sm:text-5xl font-black tracking-tight mb-6 leading-tight">
+              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-4 leading-tight">
                 Got A High-Ticket Service That Takes Forever To Explain?
               </h2>
-              <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-10">
+              <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-8">
                 Let us transform your most complex plumbing, HVAC, electrical, or roofing offering into a 45-second animated explainer that closes deals on autopilot.
               </p>
-              <div className="flex flex-wrap items-center justify-center gap-4">
+              <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
                 <Link
                   href="/book-a-call"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-9 py-4 rounded-[10px] bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm border border-white/12 hover:border-white/30 shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-200 ease-out cursor-pointer"
+                  className="inline-flex items-center justify-center bg-[#121316] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-[10px] border border-white/12 cursor-pointer"
                 >
-                  <span>Schedule Your Animation Strategy Call</span>
+                  <span className="relative z-10 tracking-tight">Schedule Your Animation Strategy Call</span>
                 </Link>
                 <a
                   href="tel:8888100013"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-[10px] bg-white/10 hover:bg-white/15 text-white font-bold text-sm border border-white/20 transition-all cursor-pointer"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-[10px] bg-white/10 hover:bg-white/15 text-white font-bold text-sm sm:text-base border border-white/20 transition-all cursor-pointer"
                 >
                   <span>Call Us: (888) 810-0013</span>
                 </a>

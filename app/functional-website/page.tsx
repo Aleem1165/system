@@ -369,33 +369,35 @@ export default function FunctionalWebsitePage() {
       <section className="py-12 sm:py-16 bg-[#fffbf7]">
         <div className="max-w-4xl mx-auto px-6 sm:px-10">
 
-          <div className="relative rounded-3xl p-6 sm:p-8 lg:p-10 bg-gradient-to-br from-[#101832] via-[#1b2240] to-[#25183f] text-white shadow-xl overflow-hidden text-center">
+          <div className="relative rounded-3xl p-8 sm:p-12 lg:p-14 bg-[#101832] text-center border border-white/10 shadow-[0_25px_60px_-15px_rgba(16,24,50,0.5)] overflow-hidden">
+            {/* Top Border Glow Line (Linear Style) */}
+            <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#ff7a1a]/70 to-transparent" />
 
-            {/* Ambient Purple Glow Orbs */}
-            <div className="absolute -top-24 -right-24 w-80 h-80 bg-[#ff7a1a]/20 rounded-full blur-3xl pointer-events-none" />
-            <div className="absolute -bottom-24 -left-24 w-80 h-80 bg-[#ea580c]/15 rounded-full blur-3xl pointer-events-none" />
+            {/* Subtle Ambient Brand Glow */}
+            <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-96 h-48 bg-[#ff5500]/15 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-20 right-10 w-72 h-40 bg-[#ff7a1a]/10 rounded-full blur-3xl pointer-events-none" />
 
             <div className="relative z-10 max-w-2xl mx-auto">
-              <span className="text-[#ff9838] text-xs sm:text-sm font-semibold uppercase tracking-widest block mb-2">
+              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.06] border border-white/10 text-[#ff8c38] text-xs sm:text-sm font-semibold uppercase tracking-wider mb-4 backdrop-blur-md">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#ff7a1a] animate-pulse" />
                 Ready to upgrade your web presence?
               </span>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white leading-tight mb-3">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white leading-tight mb-4">
                 Is your website mostly standing around?
               </h2>
-              <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-6">
+              <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-8">
                 Let us show you how to turn it into an automated team member that answers homeowner questions, collects quote requests, and never asks for a day off.
               </p>
 
               <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
                 <Link
                   href="/book-a-call"
-                  className="inline-flex items-center justify-center bg-[#121316] text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-[10px] border border-white/12 cursor-pointer"
+                  className="inline-flex items-center justify-center bg-[#121316] text-white font-bold text-sm sm:text-base px-8 py-3.5 rounded-[10px] border border-white/12 cursor-pointer"
                 >
-                  <span>Book a Free Strategy Call</span>
+                  <span className="relative z-10 tracking-tight">Book a Free Strategy Call</span>
                 </Link>
               </div>
             </div>
-
           </div>
 
         </div>
