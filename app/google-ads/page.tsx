@@ -123,19 +123,17 @@ export default function GoogleAdsPage() {
             <span className="text-[#ea580c] font-bold">Google Ads</span>
           </div> */}
 
+          {/* Section Header */}
+          <div className="max-w-4xl mb-10 sm:mb-12">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#101832] leading-[1.12]">
+              Show Up at the Exact Second Homeowners Need the Job Done.
+            </h1>
+          </div>
+
           {/* Split Hero Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
             {/* Left Column: Copy & Actions */}
             <div className="lg:col-span-6 flex flex-col items-start">
-              {/* <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#fff7ed] text-[#ea580c] text-xs font-bold uppercase tracking-wider mb-4 border border-[#ff7a1a]/15">
-                <span className="w-2 h-2 rounded-full bg-[#ff7a1a] animate-pulse" />
-                High-Intent Search
-              </div> */}
-
-              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#101832] leading-[1.12] mb-6">
-                Show Up at the Exact Second Homeowners Need the Job Done.
-              </h1>
-
               <p className="text-lg sm:text-xl text-[#566073] leading-relaxed mb-8">
                 Unlike social media where people casually browse, Google searchers have broken furnaces, leaking roofs, or blueprints in hand. We engineer precision Google Ads campaigns that capture high-ticket, ready-to-hire homeowners right when their intent is at its absolute peak.
               </p>
@@ -163,12 +161,6 @@ export default function GoogleAdsPage() {
                   className="inline-flex items-center justify-center bg-[#121316] text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-[10px] border border-white/12 cursor-pointer"
                 >
                   <span>Book a Free Strategy Call</span>
-                </Link>
-                <Link
-                  href="/"
-                  className="bg-white hover:bg-gray-50 text-[#101832] font-semibold text-sm sm:text-base px-6 py-3.5 rounded-[10px] border border-gray-200 transition-all cursor-pointer"
-                >
-                  Back to Home
                 </Link>
               </div>
             </div>
@@ -361,8 +353,8 @@ export default function GoogleAdsPage() {
       {/* 4. FINAL HIGH-CONVERTING CTA CARD */}
       {/* ========================================================================= */}
       <section className="py-12 sm:py-16 bg-[#fffbf7]">
-        <div className="max-w-4xl mx-auto px-6 sm:px-10">
-          <div className="relative rounded-3xl p-8 sm:p-12 lg:p-14 bg-[#101832] text-center border border-white/10 shadow-[0_25px_60px_-15px_rgba(16,24,50,0.5)] overflow-hidden">
+        <div className="max-w-4xl mx-auto px-4 sm:px-10">
+          <div className="relative rounded-3xl px-6 py-8 sm:p-12 lg:p-14 bg-[#101832] text-center border border-white/10 shadow-[0_25px_60px_-15px_rgba(16,24,50,0.5)] overflow-hidden">
             {/* Top Border Glow Line (Linear Style) */}
             <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#ff7a1a]/70 to-transparent" />
 
@@ -371,11 +363,10 @@ export default function GoogleAdsPage() {
             <div className="absolute -bottom-20 right-10 w-72 h-40 bg-[#ff7a1a]/10 rounded-full blur-3xl pointer-events-none" />
 
             <div className="relative z-10 max-w-2xl mx-auto">
-              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.06] border border-white/10 text-[#ff8c38] text-xs sm:text-sm font-semibold uppercase tracking-wider mb-4 backdrop-blur-md">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#ff7a1a] animate-pulse" />
+              <span className="text-[#ff8c38] text-xs sm:text-sm font-semibold uppercase tracking-wider mb-4 block">
                 Capture Ready-to-Hire Searches
               </span>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white leading-tight mb-4">
+              <h2 className="text-xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white leading-tight mb-4">
                 Want customers who are actively searching to hire you today?
               </h2>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-8">

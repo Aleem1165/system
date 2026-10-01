@@ -116,36 +116,22 @@ export default function AICallAgentPage() {
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-gradient-to-tr from-orange-200/35 via-amber-100/35 to-transparent rounded-full blur-3xl pointer-events-none -z-10" />
 
         <div className="max-w-6xl mx-auto px-6 sm:px-8">
+          {/* Section Header */}
+          <div className="max-w-4xl mb-10 sm:mb-12">
+            <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#ea580c] mb-3 block">
+              Zero Missed Inbound Calls
+            </span>
+            <h1 className="text-3xl sm:text-5xl lg:text-[2.9rem] font-extrabold tracking-tight text-[#101832] leading-[1.12]">
+              Calls Answered Instantly.{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ffae19] via-[#ff6818] to-[#d92323]">
+                Even When Your Hands Are On The Tools.
+              </span>
+            </h1>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
             {/* Left Column: Copy & Value Proposition */}
             <div className="lg:col-span-6 flex flex-col items-start">
-              {/* Badges */}
-              {/* 
-              <div className="flex flex-wrap items-center gap-2.5 mb-6">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#fff7ed] border border-[#ffedd5] text-[#ea580c] text-xs font-bold uppercase tracking-wider">
-                  <span className="w-2 h-2 rounded-full bg-[#ff7a1a] animate-pulse" />
-                  Other Services
-                </div>
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-50 text-orange-700 text-xs font-semibold border border-orange-200">
-                  <span>🎙️</span>
-                  <span>24/7 AI Voice Dispatch</span>
-                </div>
-              </div>
-              */}
-
-              {/* Eyebrow */}
-              <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#ea580c] mb-3">
-                Zero Missed Inbound Calls
-              </span>
-
-              {/* Headline */}
-              <h1 className="text-3xl sm:text-5xl lg:text-[2.9rem] font-extrabold tracking-tight text-[#101832] leading-[1.12] mb-6">
-                Calls Answered Instantly.{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ffae19] via-[#ff6818] to-[#d92323]">
-                  Even When Your Hands Are On The Tools.
-                </span>
-              </h1>
-
               {/* Narrative Description */}
               <p className="text-base sm:text-lg text-[#566073] leading-relaxed mb-8">
                 Up on a ladder, under a crawlspace, or driving between job sites—answering every inbound call is nearly impossible. Our conversational voice AI assistant answers instantly, speaks with natural human warmth, answers FAQs, qualifies job details, and books appointments straight into your calendar.
@@ -403,8 +389,8 @@ export default function AICallAgentPage() {
       {/* 4. HIGH-CONVERTING CALL TO ACTION                                         */}
       {/* ========================================================================= */}
       <section className="py-20 sm:py-28 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="relative rounded-3xl p-8 sm:p-12 lg:p-14 bg-[#101832] text-center border border-white/10 shadow-[0_25px_60px_-15px_rgba(16,24,50,0.5)] overflow-hidden">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="relative rounded-3xl px-6 py-8 sm:p-12 lg:p-14 bg-[#101832] text-center border border-white/10 shadow-[0_25px_60px_-15px_rgba(16,24,50,0.5)] overflow-hidden">
             {/* Top Border Glow Line (Linear Style) */}
             <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#ff7a1a]/70 to-transparent" />
 
@@ -413,11 +399,10 @@ export default function AICallAgentPage() {
             <div className="absolute -bottom-20 right-10 w-72 h-40 bg-[#ff7a1a]/10 rounded-full blur-3xl pointer-events-none" />
 
             <div className="relative z-10 max-w-3xl mx-auto">
-              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.06] border border-white/10 text-[#ff8c38] text-xs sm:text-sm font-semibold uppercase tracking-wider mb-4 backdrop-blur-md">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#ff7a1a] animate-pulse" />
+              <span className="text-[#ff8c38] text-xs sm:text-sm font-semibold uppercase tracking-wider mb-4 block">
                 Stop Bleeding High-Ticket Revenue
               </span>
-              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-4 leading-tight">
+              <h2 className="text-xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-4 leading-tight">
                 Tired of Losing $5,000+ Jobs Just Because You Were Under A Sink?
               </h2>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-8">

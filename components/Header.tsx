@@ -250,14 +250,18 @@ export default function Header() {
     setSolutionsOpen(false);
     setAboutOpen(false);
     setMobileMenuOpen(false);
+    setMobileSolutionsExpand(false);
+    setMobileAboutExpand(false);
   }, [pathname]);
 
-  // Lock body scroll when mobile menu is open
+  // Lock body scroll when mobile menu is open & reset accordions on close
   useEffect(() => {
     if (mobileMenuOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
+      setMobileSolutionsExpand(false);
+      setMobileAboutExpand(false);
     }
     return () => {
       document.body.style.overflow = "";

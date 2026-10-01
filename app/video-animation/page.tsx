@@ -116,36 +116,22 @@ export default function VideoAnimationPage() {
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-gradient-to-tr from-orange-200/35 via-amber-100/35 to-transparent rounded-full blur-3xl pointer-events-none -z-10" />
 
         <div className="max-w-6xl mx-auto px-6 sm:px-8">
+          {/* Section Header */}
+          <div className="max-w-4xl mb-10 sm:mb-12">
+            <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#ea580c] mb-3 block">
+              Clarity Drives Higher Estimates
+            </span>
+            <h1 className="text-3xl sm:text-5xl lg:text-[2.9rem] font-extrabold tracking-tight text-[#101832] leading-[1.12]">
+              Explain Your Complex Services In{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ffae19] via-[#ff6818] to-[#d92323]">
+                45 Seconds Flat.
+              </span>
+            </h1>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
             {/* Left Column: Copy & Value Proposition */}
             <div className="lg:col-span-6 flex flex-col items-start">
-              {/* Badges */}
-              {/* 
-              <div className="flex flex-wrap items-center gap-2.5 mb-6">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#fff7ed] border border-[#ffedd5] text-[#ea580c] text-xs font-bold uppercase tracking-wider">
-                  <span className="w-2 h-2 rounded-full bg-[#ff7a1a] animate-pulse" />
-                  Other Services
-                </div>
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-50 text-orange-700 text-xs font-semibold border border-orange-200">
-                  <span>🎬</span>
-                  <span>Custom Motion Graphics</span>
-                </div>
-              </div>
-              */}
-
-              {/* Eyebrow */}
-              <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#ea580c] mb-3">
-                Clarity Drives Higher Estimates
-              </span>
-
-              {/* Headline */}
-              <h1 className="text-3xl sm:text-5xl lg:text-[2.9rem] font-extrabold tracking-tight text-[#101832] leading-[1.12] mb-6">
-                Explain Your Complex Services In{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ffae19] via-[#ff6818] to-[#d92323]">
-                  45 Seconds Flat.
-                </span>
-              </h1>
-
               {/* Narrative Description */}
               <p className="text-base sm:text-lg text-[#566073] leading-relaxed mb-8">
                 Trenchless sewer repairs, heat pump conversions, and full roof replacements are tough to explain over the phone. Our custom 2D/3D animated videos turn complex trade methods into engaging, simple visual stories that homeowners actually finish and buy.
@@ -391,8 +377,8 @@ export default function VideoAnimationPage() {
       {/* 4. HIGH-CONVERTING CALL TO ACTION                                         */}
       {/* ========================================================================= */}
       <section className="py-20 sm:py-28 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="relative rounded-3xl p-8 sm:p-12 lg:p-14 bg-[#101832] text-center border border-white/10 shadow-[0_25px_60px_-15px_rgba(16,24,50,0.5)] overflow-hidden">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="relative rounded-3xl px-6 py-8 sm:p-12 lg:p-14 bg-[#101832] text-center border border-white/10 shadow-[0_25px_60px_-15px_rgba(16,24,50,0.5)] overflow-hidden">
             {/* Top Border Glow Line (Linear Style) */}
             <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#ff7a1a]/70 to-transparent" />
 
@@ -401,11 +387,10 @@ export default function VideoAnimationPage() {
             <div className="absolute -bottom-20 right-10 w-72 h-40 bg-[#ff7a1a]/10 rounded-full blur-3xl pointer-events-none" />
 
             <div className="relative z-10 max-w-3xl mx-auto">
-              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.06] border border-white/10 text-[#ff8c38] text-xs sm:text-sm font-semibold uppercase tracking-wider mb-4 backdrop-blur-md">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#ff7a1a] animate-pulse" />
+              <span className="text-[#ff8c38] text-xs sm:text-sm font-semibold uppercase tracking-wider mb-4 block">
                 Elevate Your Estimating Process
               </span>
-              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-4 leading-tight">
+              <h2 className="text-xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-4 leading-tight">
                 Got A High-Ticket Service That Takes Forever To Explain?
               </h2>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-8">

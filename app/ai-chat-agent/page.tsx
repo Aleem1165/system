@@ -93,23 +93,6 @@ export default function AIChatAgentPage() {
     },
   ];
 
-  const steps = [
-    {
-      step: "01",
-      title: "Visitor Lands on Your Site",
-      desc: "A homeowner visits your site searching for roofing, plumbing, HVAC, or remodeling services. The AI chat greets them warmly with context.",
-    },
-    {
-      step: "02",
-      title: "Intelligent Qualification",
-      desc: "The AI agent answers their specific service questions and asks for their contact info, address, and project details in a friendly dialogue.",
-    },
-    {
-      step: "03",
-      title: "Instant Lead Alert to Your Phone",
-      desc: "A pre-qualified lead notification lands directly on your mobile device and CRM with the full transcript, ready for booking the job.",
-    },
-  ];
 
   return (
     <div className="w-full bg-white text-[#101832] overflow-hidden">
@@ -280,7 +263,7 @@ export default function AIChatAgentPage() {
           </div>
 
           {/* 4 Pillars Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {pillars.map((p, idx) => (
               <div
                 key={idx}
@@ -324,55 +307,14 @@ export default function AIChatAgentPage() {
         </div>
       </section>
 
-      {/* ========================================================================= */}
-      {/* 3. WORKFLOW SECTION: HOW IT WORKS */}
-      {/* ========================================================================= */}
-      <section className="py-16 sm:py-24 bg-white">
-        <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-12">
-          
-          <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
-            {/* <span className="text-[#ea580c] text-xs sm:text-sm font-extrabold uppercase tracking-widest block mb-3">
-              Simple 3-Step Process
-            </span> */}
-            <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-[#101832] leading-tight mb-5">
-              How the AI chat agent captures estimates
-            </h2>
-            <p className="text-base sm:text-lg text-[#566073] leading-relaxed">
-              Designed to connect seamlessly into your workflow without complicated technical steps.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {steps.map((st, sIdx) => (
-              <div
-                key={sIdx}
-                className="relative bg-[#fffbf7] rounded-xl sm:rounded-2xl p-8 border border-gray-200/70 flex flex-col justify-between"
-              >
-                <div>
-                  <span className="inline-block px-3 py-1 rounded-full bg-[#ff7a1a]/10 text-[#ea580c] text-xs font-bold mb-4">
-                    Step {st.step}
-                  </span>
-                  <h3 className="text-xl font-bold text-[#101832] mb-3">
-                    {st.title}
-                  </h3>
-                  <p className="text-sm text-[#566073] leading-relaxed">
-                    {st.desc}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-        </div>
-      </section>
 
       {/* ========================================================================= */}
       {/* 4. FINAL HIGH-CONVERTING COMPACT CTA CARD */}
       {/* ========================================================================= */}
       <section className="py-12 sm:py-16 bg-[#fffbf7]">
-        <div className="max-w-4xl mx-auto px-6 sm:px-10">
+        <div className="max-w-4xl mx-auto px-4 sm:px-10">
 
-          <div className="relative rounded-3xl p-8 sm:p-12 lg:p-14 bg-[#101832] text-center border border-white/10 shadow-[0_25px_60px_-15px_rgba(16,24,50,0.5)] overflow-hidden">
+          <div className="relative rounded-3xl px-6 py-8 sm:p-12 lg:p-14 bg-[#101832] text-center border border-white/10 shadow-[0_25px_60px_-15px_rgba(16,24,50,0.5)] overflow-hidden">
             {/* Top Border Glow Line (Linear Style) */}
             <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#ff7a1a]/70 to-transparent" />
 
@@ -381,11 +323,10 @@ export default function AIChatAgentPage() {
             <div className="absolute -bottom-20 right-10 w-72 h-40 bg-[#ff7a1a]/10 rounded-full blur-3xl pointer-events-none" />
 
             <div className="relative z-10 max-w-2xl mx-auto">
-              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.06] border border-white/10 text-[#ff8c38] text-xs sm:text-sm font-semibold uppercase tracking-wider mb-4 backdrop-blur-md">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#ff7a1a] animate-pulse" />
+              <span className="text-[#ff8c38] text-xs sm:text-sm font-semibold uppercase tracking-wider mb-4 block">
                 Never miss an after-hours lead
               </span>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white leading-tight mb-4">
+              <h2 className="text-xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white leading-tight mb-4">
                 Visitors have questions at 11:47 p.m. Let's make sure they get answered.
               </h2>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-8">
