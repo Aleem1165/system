@@ -140,26 +140,28 @@ export default function MetaAdsPage() {
               </p>
 
               {/* Trust Badges Bar */}
-              <div className="grid grid-cols-3 gap-3 w-full mb-8 pt-4 border-t border-gray-100">
-                <div className="flex flex-col">
-                  <span className="text-xl sm:text-2xl font-black text-[#ea580c]">Local</span>
-                  <span className="text-xs font-semibold text-[#566073]">Zip-Code Targeting</span>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-xl sm:text-2xl font-black text-[#ea580c]">4.6x</span>
-                  <span className="text-xs font-semibold text-[#566073]">Average Client ROAS</span>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-xl sm:text-2xl font-black text-[#ea580c]">Instant</span>
-                  <span className="text-xs font-semibold text-[#566073]">SMS Lead Alerts</span>
+              <div className="w-full max-w-xl mb-8">
+                <div className="bg-white border border-gray-200/90 rounded-2xl shadow-xs grid grid-cols-3 divide-x divide-gray-100 py-3.5 px-2 sm:bg-transparent sm:border-0 sm:shadow-none sm:p-0 sm:divide-x-0 sm:gap-4 sm:grid sm:grid-cols-3">
+                  <div className="flex flex-col items-center justify-center text-center px-1.5 py-1 sm:py-3.5 sm:px-2.5 sm:rounded-xl sm:bg-white sm:border sm:border-gray-200 sm:shadow-sm">
+                    <span className="text-lg sm:text-2xl font-black text-[#ea580c] leading-tight">Local</span>
+                    <span className="text-[11px] sm:text-xs font-semibold text-[#566073] mt-1 whitespace-nowrap">Zip-Code Focus</span>
+                  </div>
+                  <div className="flex flex-col items-center justify-center text-center px-1.5 py-1 sm:py-3.5 sm:px-2.5 sm:rounded-xl sm:bg-white sm:border sm:border-gray-200 sm:shadow-sm">
+                    <span className="text-lg sm:text-2xl font-black text-[#101832] leading-tight">4.6x</span>
+                    <span className="text-[11px] sm:text-xs font-semibold text-[#566073] mt-1 whitespace-nowrap">Average ROAS</span>
+                  </div>
+                  <div className="flex flex-col items-center justify-center text-center px-1.5 py-1 sm:py-3.5 sm:px-2.5 sm:rounded-xl sm:bg-white sm:border sm:border-gray-200 sm:shadow-sm">
+                    <span className="text-lg sm:text-2xl font-black text-[#ea580c] leading-tight">Instant</span>
+                    <span className="text-[11px] sm:text-xs font-semibold text-[#566073] mt-1 whitespace-nowrap">SMS Lead Alerts</span>
+                  </div>
                 </div>
               </div>
 
               {/* CTAs */}
-              <div className="flex flex-wrap items-center gap-4">
+              <div className="flex flex-wrap items-center gap-4 w-full sm:w-auto">
                 <Link
                   href="/book-a-call"
-                  className="inline-flex items-center justify-center bg-[#121316] text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-[10px] border border-white/12 cursor-pointer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center bg-[#121316] text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-[10px] border border-white/12 cursor-pointer"
                 >
                   <span>Book a Free Strategy Call</span>
                 </Link>
@@ -318,7 +320,7 @@ export default function MetaAdsPage() {
                 className="bg-[#fffbf7] rounded-xl sm:rounded-2xl p-7 border border-orange-100 flex flex-col justify-between"
               >
                 <div>
-                  <span className="text-[11px] font-bold text-[#ea580c] bg-[#fff7ed] px-2.5 py-1 rounded-full border border-[#ff7a1a]/15 inline-block mb-4">
+                  <span className="text-xs font-bold text-[#ea580c] block mb-2.5">
                     {val.badge}
                   </span>
                   <h3 className="text-lg font-bold text-[#101832] mb-2">

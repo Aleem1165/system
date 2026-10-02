@@ -107,7 +107,7 @@ export default function AICallAgentPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-[#101832] font-sans selection:bg-[#ff7a1a] selection:text-white">
+    <div className="min-h-screen bg-white text-[#101832] font-sans">
       {/* ========================================================================= */}
       {/* 1. HERO SECTION (Asymmetric Split with Live Voice AI Mockup)              */}
       {/* ========================================================================= */}
@@ -118,38 +118,34 @@ export default function AICallAgentPage() {
         <div className="max-w-6xl mx-auto px-6 sm:px-8">
           {/* Section Header */}
           <div className="max-w-4xl mb-10 sm:mb-12">
-            <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-[#ea580c] mb-3 block">
-              Zero Missed Inbound Calls
-            </span>
-            <h1 className="text-3xl sm:text-5xl lg:text-[2.9rem] font-extrabold tracking-tight text-[#101832] leading-[1.12]">
-              Calls Answered Instantly.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ffae19] via-[#ff6818] to-[#d92323]">
-                Even When Your Hands Are On The Tools.
-              </span>
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#101832] leading-[1.12]">
+              Calls Answered Instantly. Even When Your Hands Are On The Tools.
             </h1>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
             {/* Left Column: Copy & Value Proposition */}
             <div className="lg:col-span-6 flex flex-col items-start">
               {/* Narrative Description */}
-              <p className="text-base sm:text-lg text-[#566073] leading-relaxed mb-8">
+              <p className="text-lg sm:text-xl text-[#566073] leading-relaxed mb-8">
                 Up on a ladder, under a crawlspace, or driving between job sites—answering every inbound call is nearly impossible. Our conversational voice AI assistant answers instantly, speaks with natural human warmth, answers FAQs, qualifies job details, and books appointments straight into your calendar.
               </p>
 
               {/* Key Trust Metrics */}
-              <div className="grid grid-cols-3 gap-3 sm:gap-4 w-full max-w-lg mb-8">
-                <div className="p-3.5 sm:p-4 rounded-xl bg-white border border-gray-200 shadow-sm text-center">
-                  <div className="text-xl sm:text-2xl font-black text-[#ea580c]">&lt; 2s</div>
-                  <div className="text-[11px] sm:text-xs text-[#566073] font-medium mt-0.5">Answer Speed</div>
-                </div>
-                <div className="p-3.5 sm:p-4 rounded-xl bg-white border border-gray-200 shadow-sm text-center">
-                  <div className="text-xl sm:text-2xl font-black text-[#101832]">100%</div>
-                  <div className="text-[11px] sm:text-xs text-[#566073] font-medium mt-0.5">Call Capture</div>
-                </div>
-                <div className="p-3.5 sm:p-4 rounded-xl bg-white border border-gray-200 shadow-sm text-center">
-                  <div className="text-xl sm:text-2xl font-black text-emerald-600">0</div>
-                  <div className="text-[11px] sm:text-xs text-[#566073] font-medium mt-0.5">Lost Voicemails</div>
+              <div className="w-full max-w-xl mb-8">
+                <div className="bg-white border border-gray-200/90 rounded-2xl shadow-xs grid grid-cols-3 divide-x divide-gray-100 py-3.5 px-2 sm:bg-transparent sm:border-0 sm:shadow-none sm:p-0 sm:divide-x-0 sm:gap-4 sm:grid sm:grid-cols-3">
+                  <div className="flex flex-col items-center justify-center text-center px-1.5 py-1 sm:py-3.5 sm:px-2.5 sm:rounded-xl sm:bg-white sm:border sm:border-gray-200 sm:shadow-sm">
+                    <span className="text-lg sm:text-2xl font-black text-[#ea580c] leading-tight">&lt; 2s</span>
+                    <span className="text-[11px] sm:text-xs font-semibold text-[#566073] mt-1 whitespace-nowrap">Answer Speed</span>
+                  </div>
+                  <div className="flex flex-col items-center justify-center text-center px-1.5 py-1 sm:py-3.5 sm:px-2.5 sm:rounded-xl sm:bg-white sm:border sm:border-gray-200 sm:shadow-sm">
+                    <span className="text-lg sm:text-2xl font-black text-[#101832] leading-tight">100%</span>
+                    <span className="text-[11px] sm:text-xs font-semibold text-[#566073] mt-1 whitespace-nowrap">Call Capture</span>
+                  </div>
+                  <div className="flex flex-col items-center justify-center text-center px-1.5 py-1 sm:py-3.5 sm:px-2.5 sm:rounded-xl sm:bg-white sm:border sm:border-gray-200 sm:shadow-sm">
+                    <span className="text-lg sm:text-2xl font-black text-emerald-600 leading-tight">0</span>
+                    <span className="text-[11px] sm:text-xs font-semibold text-[#566073] mt-1 whitespace-nowrap">Lost Voicemails</span>
+                  </div>
                 </div>
               </div>
 
@@ -157,16 +153,9 @@ export default function AICallAgentPage() {
               <div className="flex flex-wrap items-center gap-4 w-full sm:w-auto">
                 <Link
                   href="/book-a-call"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-[10px] bg-[#121316] hover:bg-[#20222a] text-white font-bold text-sm shadow-[0_2px_6px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.15)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.28)] transition-all transform hover:-translate-y-0.5 border border-white/12 hover:border-white/30"
+                  className="w-full sm:w-auto inline-flex items-center justify-center bg-[#121316] text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-[10px] border border-white/12 cursor-pointer"
                 >
                   <span>Schedule Voice Demo</span>
-                  <span className="text-base font-bold">→</span>
-                </Link>
-                <Link
-                  href="/"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-[10px] bg-white hover:bg-gray-50 text-[#101832] font-bold text-sm border border-gray-200 shadow-sm hover:border-gray-300 transition-all"
-                >
-                  <span>Explore Full System</span>
                 </Link>
               </div>
             </div>
@@ -365,7 +354,7 @@ export default function AICallAgentPage() {
                 className="p-8 rounded-xl sm:rounded-2xl bg-white border border-gray-200 shadow-sm flex flex-col justify-between"
               >
                 <div>
-                  <span className="inline-block px-3 py-1 rounded-full bg-[#fff7ed] text-[#ea580c] text-xs font-bold uppercase tracking-wider mb-4 border border-[#ffedd5]">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#ea580c] block mb-2.5">
                     {pillar.badge}
                   </span>
                   <h3 className="text-xl font-extrabold text-[#101832] mb-3">
@@ -374,10 +363,6 @@ export default function AICallAgentPage() {
                   <p className="text-sm text-[#566073] leading-relaxed">
                     {pillar.desc}
                   </p>
-                </div>
-                <div className="mt-6 pt-4 border-t border-gray-100 flex items-center text-xs font-bold text-[#ea580c]">
-                  <span>Built for trade profitability</span>
-                  <span className="ml-1">→</span>
                 </div>
               </div>
             ))}
@@ -415,12 +400,6 @@ export default function AICallAgentPage() {
                 >
                   <span className="relative z-10 tracking-tight">Schedule Your AI Demo</span>
                 </Link>
-                <a
-                  href="tel:8888100013"
-                  className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-[10px] bg-white/10 hover:bg-white/15 text-white font-bold text-sm sm:text-base border border-white/20 transition-all cursor-pointer"
-                >
-                  <span>Call Us: (888) 810-0013</span>
-                </a>
               </div>
             </div>
           </div>

@@ -30,7 +30,7 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-[#101832] font-sans selection:bg-[#7c35ed] selection:text-white">
+    <div className="min-h-screen bg-white text-[#101832] font-sans">
       {/* ========================================================================= */}
       {/* 1. HERO SECTION                                                           */}
       {/* ========================================================================= */}
